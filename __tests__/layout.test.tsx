@@ -2,11 +2,11 @@ import { render, screen } from '@testing-library/react'
 import Layout from '@/components/layout/Layout'
 
 describe('layout', () => {
-  it('renders a navbar', () => {
+  it('renders a header', () => {
     render(<Layout children={[]}/>)
 
-    const navbar = screen.getByTitle('navbar')
-    expect(navbar).toBeInTheDocument()
+    const header = screen.getByTitle('header')
+    expect(header).toBeInTheDocument()
   })
 
   it('renders a content', () => {
