@@ -48,6 +48,17 @@ a {
   text-decoration: none;
 }
 
+section{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+  padding: 0px 150px;
+
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
