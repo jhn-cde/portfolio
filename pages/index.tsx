@@ -2,10 +2,11 @@ import Head from 'next/head'
 
 import styles from '@/pages/index.module.css'
 import Intro from '@/components/intro/Intro'
+import Layout from '@/components/layout/Layout'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>Johan Huaman</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,6 +15,6 @@ export default function Home() {
       <main>
         <Intro />
       </main>
-    </div>
+    </Layout>
   )
 }
