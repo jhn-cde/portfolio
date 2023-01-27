@@ -6,7 +6,7 @@ describe('section Intro', () => {
     render(<Intro />)
 
     const heading = screen.getByRole('heading', 
-    {name: "Johan Huaman",})
+    {name: "Johan Huaman.",})
     expect(heading).toBeInTheDocument()
   })
 
