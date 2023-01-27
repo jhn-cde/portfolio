@@ -18,7 +18,7 @@ describe('layout', () => {
 
   it('renders 1 children', () => {
     render(<Layout children={[
-      <div title='content_test'></div>
+      <div key={'test'} title='content_test'></div>
     ]}/>)
 
     const content = screen.getByTitle('content_test')
@@ -27,8 +27,8 @@ describe('layout', () => {
 
   it('renders n children', () => {
     render(<Layout children={[
-      <div title='content_test1'></div>,
-      <div title='content_test2'></div>
+      <div key={'test1'} title='content_test1'></div>,
+      <div key={'test2'} title='content_test2'></div>
     ]}/>)
 
     const content1 = screen.getByTitle('content_test1')
