@@ -39,6 +39,10 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, a, p {
+  color: var(--global-text-color);
+}
+
 a {
   color: inherit;
   text-decoration: none;
