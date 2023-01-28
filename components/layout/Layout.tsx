@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import Background from '../background/Background';
+import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import styles from './layout.module.css';
 
@@ -30,10 +31,10 @@ const Layout = ({ children }: Props) => {
       </Head>
       
       <Header />
+      
       <div title='content' className={styles.content}>{children}</div>
       
-      <footer className={styles.footer} title='footer'></footer>
-
+      <Footer />
       <Background />
     </div>
   )
