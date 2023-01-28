@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image';
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './layout.module.css';
 
 interface Props{
@@ -24,7 +24,7 @@ const Layout = ({ children }: Props) => {
   }
 
   const handleResize = () => {
-    const _width = window.innerWidth-40
+    const _width = window.innerWidth-60
     const _height = _width*1800/1000
     setWindowWidth(_width)
     setWindowHeigth(_height)
@@ -56,11 +56,10 @@ const Layout = ({ children }: Props) => {
 
       <div className={styles.image_container}>
         <Image 
-          className={styles.image}
           src="/images/background.svg"
           width={windowWidth}
           height={windowHeigth}
-          alt=''
+          alt='background'
           priority
         />
       </div>
