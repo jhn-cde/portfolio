@@ -3,8 +3,8 @@ import styles from './intro.module.css'
 
 const Intro = () => {
   return (
-    <section>
-      <div className={styles.section}>
+    <section className={styles.section}>
+      <div className={styles.container}>
         <div className={styles.content_container}>
           <div className={styles.content}>
             <h6 className={styles.iam}>Hi there! I'm</h6>
