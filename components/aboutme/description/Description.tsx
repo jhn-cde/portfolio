@@ -16,6 +16,23 @@ const Description = () => {
       <p className={styles.text}>
         Technologies I've been working with recently:
       </p>
+      <div className={styles.list_container}>
+        <div className={styles.list}>
+          <ul>
+            <li><span className={styles.item}>_</span> TypeScript</li>
+            <li><span className={styles.item}>_</span> React</li>
+            <li><span className={styles.item}>_</span> Express JS</li>
+          </ul>
+        </div>
+
+        <div className={styles.list}>
+          <ul>
+            <li><span className={styles.item}>_</span> Python</li>
+            <li><span className={styles.item}>_</span> C++</li>
+            <li><span className={styles.item}>_</span> Linux</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
