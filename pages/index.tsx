@@ -1,8 +1,7 @@
 import Head from 'next/head'
-
-import styles from '@/pages/index.module.css'
 import Intro from '@/components/intro/Intro'
 import Layout from '@/components/layout/Layout'
+import AboutMe from '@/components/aboutme/AboutMe'
 
 export default function Home() {
   return (
@@ -14,6 +13,8 @@ export default function Home() {
 
       <main>
         <Intro />
+
+        <AboutMe />
       </main>
     </Layout>
   )
