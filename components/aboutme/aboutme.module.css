@@ -11,14 +11,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 40%;
 }
 .description{
-  width: 60%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  background-color: #00000001;
+  backdrop-filter: blur(3px);
+  padding-left: 2rem;
 }
 .title_container{
-  margin: auto;
-  margin-left: 40%;
   padding: 2.5rem 0;
 }
 .title{
@@ -26,27 +29,24 @@
   font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-
-}
-
 /* Mobile */
 @media (max-width: 700px) {
+  .section{
+    padding: 2rem 0;
+  }
   .content{
     display: block;
-    justify-content: space-between;
   }
   .profile{
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
   }
   .profile, .description{
-    width: 80%;
+    width: 80vw;
     margin: auto;
+    padding: 0;
   }
   .title_container{
-    margin: 0 10%;
+    margin: 0;
   }
 }
