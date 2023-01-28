@@ -50,9 +50,6 @@ a {
 }
 
 section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   max-width: 1600px;
   padding: 0 1rem;
