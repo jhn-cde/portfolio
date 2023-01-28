@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import Background from '../background/Background';
+import Header from '../header/Header';
 import styles from './layout.module.css';
 
 interface Props{
@@ -10,17 +11,6 @@ interface Props{
 export const siteTitle = 'Mi Portafolio';
 
 const Layout = ({ children }: Props) => {
-  const [navbarScroll, setNavbarScroll] = useState(false)
-  
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-  }, [])
-  
-  const handleScroll = () => {
-    setNavbarScroll(window.scrollY>=70)
-  }
-
-
   return (
     <div>
       <Head>
@@ -38,9 +28,8 @@ const Layout = ({ children }: Props) => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-      <header title='header' className={navbarScroll?styles.header_scroll:styles.header_container}><p>header</p></header>
       
+      <Header />
       <div title='content' className={styles.content}>{children}</div>
       
       <footer className={styles.footer} title='footer'></footer>

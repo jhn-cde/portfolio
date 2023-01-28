@@ -1,0 +1,20 @@
+.header,
+.header_scroll{
+  display: flex;
+  padding: 0px 50px;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  transition: var(--transition);
+}
+.header{
+  height: var(--nav-height);
+}
+.header_scroll{
+  background-color: var(--global-background-transparent-color);
+  height: var(--nav-scroll-height);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
