@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
+import Background from '../background/Background';
 import styles from './layout.module.css';
 
 interface Props{
@@ -11,24 +11,15 @@ export const siteTitle = 'Mi Portafolio';
 
 const Layout = ({ children }: Props) => {
   const [navbarScroll, setNavbarScroll] = useState(false)
-  const [windowWidth, setWindowWidth] = useState(1000)
-  const [windowHeigth, setWindowHeigth] = useState(1800)
-
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
-    window.addEventListener("resize", handleResize)
   }, [])
   
   const handleScroll = () => {
     setNavbarScroll(window.scrollY>=70)
   }
 
-  const handleResize = () => {
-    const _width = window.innerWidth-60
-    const _height = _width*1800/1000
-    setWindowWidth(_width)
-    setWindowHeigth(_height)
-  }
 
   return (
     <div>
@@ -54,16 +45,7 @@ const Layout = ({ children }: Props) => {
       
       <footer className={styles.footer} title='footer'></footer>
 
-      <div className={styles.image_container}>
-        <Image 
-          src="/images/background.svg"
-          width={windowWidth}
-          height={windowHeigth}
-          alt='background'
-          priority
-        />
-      </div>
-
+      <Background />
     </div>
   )
 }
