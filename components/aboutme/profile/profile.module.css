@@ -7,8 +7,6 @@
 .img{
   height: 100%;
   width: auto;
-  border: 1px solid var(--global-primary-color);
-  border-radius: 10px;
 }
 
 /* Mobile */
@@ -19,5 +17,6 @@
   .img{
     height: auto;
     width: 100%;
+    border: none;
   }
 }

@@ -2,14 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: var(--nav-height);
 }
 
 .container{
-  height: 65vh;
+  padding-top: var(--nav-height);
+  height: 100vh;
   display: flex;
   align-items: center;
-  max-width: 1200px;
 }
 
 .content_container{
@@ -95,6 +94,8 @@
   .container{
     height: auto;
     width: 90%;
+
+    padding-bottom: var(--nav-height);
   }
 
   .title{

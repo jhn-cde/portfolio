@@ -19,3 +19,15 @@
   color: var(--global-primary-color);
   font-weight: 900;
 }
+
+.hide{
+  display: block;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .hide{
+    display: none;
+  }
+}

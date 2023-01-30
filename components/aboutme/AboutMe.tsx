@@ -6,10 +6,10 @@ import Profile from './profile/Profile'
 const AboutMe = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.content}>
-        <div className={styles.profile}>
-          <Profile />
-        </div>
+      <div className={styles.profile}>
+        <Profile />
+      </div>
+      <div className={styles.container + ' container'}>
         <div className={styles.description}>
           <div>
             <div className={styles.title_container}>
