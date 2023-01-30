@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Intro from '@/components/intro/Intro'
 import Layout from '@/components/layout/Layout'
 import AboutMe from '@/components/aboutme/AboutMe'
+import MyProjects from '@/components/myprojects/MyProjects'
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <Intro />
 
         <AboutMe />
+
+        <MyProjects />
       </main>
     </Layout>
   )
