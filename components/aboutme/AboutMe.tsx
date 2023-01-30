@@ -13,7 +13,7 @@ const AboutMe = () => {
         <div className={styles.description}>
           <div>
             <div className={styles.title_container}>
-              <h2 className={styles.title}>About Me</h2>
+              <h2 className={styles.title} id={'aboutme'}>About Me</h2>
             </div>
             <Description />
           </div>
