@@ -1,0 +1,18 @@
+
+.project_type, .title, .techs, .description{
+  padding: 1rem 2rem;
+} 
+.project_type{
+  padding: 1rem 2rem 0;
+}
+.description{
+  background-color: var(--global-foreground-color);
+  padding-left: 4rem;
+}
+.techs{
+  display: flex;
+  justify-content: right;
+}
+.techs p{
+  margin-left: 1rem;
+}

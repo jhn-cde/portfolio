@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.img_container{
+  position: absolute;
+  left: 0;
+  width: 60%;
+}
+
+.info_container{
+  width: 50%;
+  margin-left: auto;
+  margin-left: -4rem;
+  text-align: right;
+}
