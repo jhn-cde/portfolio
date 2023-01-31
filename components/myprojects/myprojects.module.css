@@ -1,7 +1,16 @@
+.section{
+  position: relative;
+  z-index: 1;
+}
+.container{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
 .title_container{
   padding: 2.5rem 0;
 }
+
 .title{
   text-align: left;
   font-size: clamp(1.3rem, 5vw, 2rem);
