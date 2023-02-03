@@ -3,8 +3,7 @@
   z-index: 1;
 }
 .container{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 10rem;
 }
 
 .title_container{
@@ -14,4 +13,24 @@
 .title{
   text-align: left;
   font-size: clamp(1.3rem, 5vw, 2rem);
+}
+.project{
+ margin-bottom: 4rem;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .container{
+    padding: 4rem 6rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .container{
+    padding: 4rem 0;
+  }
+  .title_container{
+    padding: 4rem 2rem;
+  }
 }

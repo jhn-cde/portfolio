@@ -11,8 +11,16 @@ const MyProjects = () => {
             Some Of My Projects
           </h2>
         </div>
-        <div className="projects">
-          <Project />
+        <div className={styles.projects}>
+          <div className={styles.project}>
+            <Project />
+          </div>
+          <div className={styles.project}>
+            <Project />
+          </div>
+          <div className={styles.project}>
+            <Project />
+          </div>
         </div>
       </div>
     </section>
