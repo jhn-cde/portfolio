@@ -42,6 +42,7 @@ body {
   line-height: 1.3;
   margin: 0;
   padding: 0;
+  transition: var(--transition);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,19 +62,16 @@ section{
 }
 .container{
   max-width: 1600px;
-  margin: auto 6rem;
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .container{
-    margin: auto 3rem;
-  }
+
 }
 
 /* Mobile */
 @media (max-width: 700px) {
-  
+
 }
 
 
