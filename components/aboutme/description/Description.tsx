@@ -3,7 +3,7 @@ import styles from './description.module.css'
 
 const Description = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <p className={styles.text}>
         I'm from the National University San Antonio Abad del Cusco. I specialize in <span style={{fontWeight :'600'}}>software development</span> and <span style={{fontWeight :'600'}}>machine learning</span> and have gained valuable experience through participating in <span style={{fontWeight :'600'}}>coding competitions</span>.
       </p>
