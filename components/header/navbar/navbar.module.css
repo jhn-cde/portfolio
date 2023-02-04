@@ -4,3 +4,16 @@
   align-items: center;
   width: 100%;
 }
+
+.logo{
+  display: flex;
+}
+
+.img, .scroll{
+  width: auto;
+  height: 3.5rem;
+  transition: var(--transition);
+}
+.scroll{
+  height: 2.5rem;
+}
