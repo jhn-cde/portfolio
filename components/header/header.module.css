@@ -1,7 +1,7 @@
 .header,
 .header_scroll{
   display: flex;
-  padding: 0px 50px;
+  padding: 0px 6rem;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -17,4 +17,21 @@
   height: var(--nav-scroll-height);
   backdrop-filter: blur(10px);
   transition: var(--transition);
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .header,
+  .header_scroll{
+    padding: 0 4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .header,
+  .header_scroll{
+    padding: 0 1rem;
+  }
 }
