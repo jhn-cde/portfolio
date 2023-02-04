@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header title='header' className={navbarScroll?styles.header_scroll:styles.header}
     >
-      <NavBar/>
+      <NavBar scroll={navbarScroll}/>
     </header>
   )
 }
