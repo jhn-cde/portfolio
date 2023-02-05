@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Background from '../background/Background';
 import Footer from '../footer/Footer';
-import Header from '../header/Header';
+import NavBar from '../navbar/NavBar';
 import styles from './layout.module.css';
 
 interface Props{
@@ -30,7 +30,7 @@ const Layout = ({ children }: Props) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       
-      <Header />
+      <NavBar />
       
       <div title='content' className={styles.content}>{children}</div>
       
