@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-4 md:max-w-7xl m-auto">
+      <main className="bg-white">
         <Intro />
 
         <AboutMe />
