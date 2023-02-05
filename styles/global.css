@@ -69,7 +69,7 @@ h4 {
   color: theme(textColor.accent.dark);
 }
 
-p, a, li, span{
+p, a{
   color: theme(textColor.secondary.DEFAULT);
 }
 
