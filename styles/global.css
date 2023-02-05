@@ -53,18 +53,41 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-weight: theme(fontWeight.bold);
+  font-size: theme(fontSize.3xl);
+  color: theme(textColor.accent.DEFAULT);
+}
+
+h3 {
+  color:theme(textColor.secondary.DEFAULT);
+  font-size: theme(fontSize.xl);
+  font-weight: theme(fontWeight.bold);
+}
+
+h4 {
+  color: theme(textColor.accent.dark);
+}
+
+p, a, li, span{
+  color: theme(textColor.secondary.DEFAULT);
+}
+
 
 /* Tablet and Smaller Desktop 
 @media (min-width: 701px) and (max-width: 1120px) {
 
 }
 
-/* Mobile 
+/* Mobile */
 @media (max-width: 700px) {
 
+h2 {
+  font-size: theme(fontSize.2xl);
+}
 }
 
-
+/*
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
