@@ -15,23 +15,8 @@
 .list li{
   list-style: none;
   font-family: var(--font-mono);
-  color: var(--global-header-color);
 }
 
 .item{
-  font-size: .8rem;
-  color: var(--global-primary-color);
   font-weight: 900;
-}
-
-.hide{
-  display: block;
-}
-
-
-/* Mobile */
-@media (max-width: 700px) {
-  .hide{
-    display: none;
-  }
 }
