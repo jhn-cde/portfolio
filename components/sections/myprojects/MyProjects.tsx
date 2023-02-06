@@ -1,25 +1,24 @@
 import React from 'react'
 import styles from './myprojects.module.css'
-import Project from './project/Project'
+import ProjectA from './project/ProjectA'
+import ProjectB from './project/ProjectB'
 
 const MyProjects = () => {
   return (
-    <section className={styles.section}>
-      <div className={styles.container + ' container'}>
-        <div className={styles.title_container}>
-          <h2 className={styles.title} id={'myprojects'}>
-            Some Of My Projects
-          </h2>
-        </div>
-        <div className={styles.projects}>
-          <div className={styles.project}>
-            <Project />
+    <section className='sm:min-h-screenflex items-center'>
+      <div className='md:max-w-7xl m-auto px-4 py-12 sm:px md:px-20'>
+        <h2 id={'myprojects'}>
+          Some Of My Projects
+        </h2>
+        <div className='mt-12'>
+          <div className='mb-12'>
+            <ProjectA />
           </div>
-          <div className={styles.project}>
-            <Project />
+          <div className='mb-12'>
+            <ProjectB />
           </div>
-          <div className={styles.project}>
-            <Project />
+          <div className='mb-12'>
+            <ProjectA />
           </div>
         </div>
       </div>
