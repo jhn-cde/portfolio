@@ -5,7 +5,7 @@ import Profile from './profile/Profile'
 
 const AboutMe = () => {
   return (
-    <section className='sm:min-h-screen bg-secondary lg:bg-secondary-light lg:bg-transparent'>
+    <section className='sm:min-h-screen bg-secondary lg:bg-secondary-light lg:bg-transparent flex items-center'>
       <div className="md:max-w-7xl m-auto px-4 py-12 lg:flex items-center sm:px md:px-20">
         <div className='mb-8 lg:mb-0 lg:absolute'>
           <Profile />
