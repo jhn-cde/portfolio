@@ -13,10 +13,10 @@ const Description = () => {
       <p className="text-secondary hidden lg:block">
         As a recent graduate, I am eager to start my professional career and utilize the skills and knowledge I have acquired during my studies. I am open to remote or on-site opportunities and am willing to work from anywhere.
       </p>
-      <p className="text-primary-light lg:text-secondary">
+      {/* <p className="text-primary-light lg:text-secondary">
         Technologies I've been working with recently:
       </p>
-      <div className="text-accent flex">
+      <div className="text-accent lg:text-accent-dark flex">
         <ul className="mr-12">
           <li><span>_</span> TypeScript</li>
           <li><span>_</span> React</li>
@@ -27,7 +27,7 @@ const Description = () => {
           <li><span>_</span> C++</li>
           <li><span>_</span> Linux</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }
