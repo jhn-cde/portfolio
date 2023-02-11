@@ -62,9 +62,9 @@ const NavBar = () => {
       </div>
       <ul className='flex items-center'>
         <li><BsFillMoonStarsFill className='cursor-pointer text-lg mr-6 text-secondary' /></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#">About Me</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#">My Projects</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#">Contact Me</a></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#aboutme">About Me</a></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#myprojects">My Projects</a></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#contactme">Contact Me</a></li>
         <li><a className='bg-transparent border-accent border-2 px-4 py-2 text-accent font-mono rounded-md' href="#">Resume</a></li>
       </ul>
     </nav>

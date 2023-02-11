@@ -5,7 +5,7 @@ import Description from './description/Description'
 
 const AboutMe = () => {
   return (
-    <section className='sm:min-h-screen bg-secondary lg:bg-secondary-light flex items-center'>
+    <section className='sm:min-h-screen bg-secondary lg:bg-secondary-light flex items-center'  id={'aboutme'}>
       <div className="md:max-w-6xl m-auto px-4 py-12 lg:py-0 lg:flex items-center sm:px md:px-20">
         <div className='mb-8 lg:mb-0 lg:absolute left-0 lg:min-h-screen'>
           <Image
@@ -18,7 +18,7 @@ const AboutMe = () => {
         </div>
 
         <div className="lg:w-6/12 ml-auto lg:p-6 bg-opacity-0 lg:bg-secondary-light lg:bg-opacity-70 lg:backdrop-blur-md">
-          <h2 id={'aboutme'}>
+          <h2>
             About Me
           </h2>
           <Description />
