@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-import Background from '../background/Background';
 import Footer from '../footer/Footer';
 import NavBar from '../navbar/NavBar';
 import styles from './layout.module.css';
@@ -35,7 +34,6 @@ const Layout = ({ children }: Props) => {
       <div title='content' className={styles.content}>{children}</div>
       
       <Footer />
-      <Background />
     </div>
   )
 }
