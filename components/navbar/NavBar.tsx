@@ -50,7 +50,7 @@ const NavBar = () => {
   }, [scrollUp])
 
   return (
-    <nav className={(scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-blue-500/40 bg-opacity-50 bg-white backdrop-blur-md':'')}>
+    <nav className={(scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-blue-500/40 bg-opacity-80 bg-white backdrop-blur-md':'')}>
       <div className='shrink-0'>
         <Image
           src={logo}

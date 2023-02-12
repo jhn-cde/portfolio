@@ -10,29 +10,29 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'primary': {
-          'light': '#DFF6FF',
-          'dark': '#009780',
-          DEFAULT: '#B8FFEE'
+          'light': '#F0FFFF',
+          DEFAULT: '#B8FFEE',
+          'dark': '#A8EFDE'
         },
         'primary-dark': {
-          'light': '#D7F0EC',
-          'dark': '#06283D',
-          DEFAULT: '#318C83'
+          'light': '#56788D',
+          DEFAULT: '#06283D',
+          'dark': '#00081D'
         },
         'secondary': {
-          'light': '#D7F0EC',
+          'light': '#56788D',
           DEFAULT: '#06283D',
-          'dark': '#318C83'
+          'dark': '#00081D'
         },
         'secondary-dark': {
-          'light': '#DFF6FF',
-          'dark': '#009780',
-          DEFAULT: '#B8FFEE'
+          'light': '#FFFFFF',
+          DEFAULT: '#B8FFEE',
+          'dark': '#A8EFDE'
         },
         'accent': {
-          'light': '#D9ECE9',
-          'dark': '#378980',
-          DEFAULT: '#47B5FF'
+          'light': '#67D5FF',
+          DEFAULT: '#47B5FF',
+          'dark': '#1795DF'
         }
       },
     },
