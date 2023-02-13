@@ -7,7 +7,7 @@ const ProjectA = () => {
     <div className='overflow-hidden relative flex items-center sm:h-60 sm:mx-28 md:mx-0 md:h-96 drop-shadow-xl'>
       <div className="w-full relative z-0 pl-0 md:absolute md:w-6/12">
         <Image
-          src={'/images/plan_de_estudios.png'}
+          src={'/plan_de_estudios.png'}
           width={900}
           height={600}
           alt='johan photo'

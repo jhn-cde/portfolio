@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="md:max-w-6xl m-auto px-4 py-12 lg:py-0 lg:flex items-center sm:px md:px-20">
         <div className='mb-8 lg:mb-0 lg:absolute left-0 lg:min-h-screen'>
           <Image
-            src={'/images/profile.png'}
+            src={'/profile.png'}
             width={500}
             height={441}
             alt='johan photo'

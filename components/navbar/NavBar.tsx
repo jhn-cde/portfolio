@@ -39,9 +39,9 @@ const NavBar = () => {
       setScroll(window.scrollY)
 
       if (window.scrollY>=truescroll)
-        setLogo('/images/logo_scroll.svg')
+        setLogo('/logo_scroll.svg')
       else
-        setLogo('/images/logo.svg')
+        setLogo('/logo.svg')
     };
 
     window.addEventListener("scroll", onScroll);
