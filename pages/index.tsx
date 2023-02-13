@@ -14,13 +14,12 @@ export default function Home() {
       </Head>
 
       <main className="bg-gradient-to-r from-white to-primary-light">
+
         <Intro />
-
         <AboutMe />
-
         <MyProjects />
-
         <GetInTouch />
+        
       </main>
     </Layout>
   )
