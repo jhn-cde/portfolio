@@ -3,6 +3,7 @@ import Intro from '@/components/sections/intro/Intro'
 import Layout from '@/components/layout/Layout'
 import AboutMe from '@/components/sections/aboutme/AboutMe'
 import MyProjects from '@/components/sections/myprojects/MyProjects'
+import GetInTouch from '@/components/sections/getintouch/GetInTouch'
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <AboutMe />
 
         <MyProjects />
+
+        <GetInTouch />
       </main>
     </Layout>
   )
