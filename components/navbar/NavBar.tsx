@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 const truescroll = 70
 
 const NavBar = () => {
-  const [logo, setLogo] = useState('/images/logo.svg')
+  const [logo, setLogo] = useState('/logo.svg')
   const [scroll, setScroll] = useState(0)
   const [scrollUp, setScrollUp] = useState(false);
 
