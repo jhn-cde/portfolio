@@ -16,7 +16,7 @@ if (isGithubActions) {
   images = {
     images: {
       loader: 'imgix',
-      path: 'https://jhn-cde.github.io/portfolio'
+      path: 'https://jhn-cde.github.io/portfolio/'
     }
   }
 }
