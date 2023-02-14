@@ -2,7 +2,7 @@
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-let assetPrefix = ''
+let assetPrefix = undefined
 let basePath = ''
 let images = {}
 
@@ -16,7 +16,7 @@ if (isGithubActions) {
   images = {
     images: {
       loader: 'imgix',
-      path: 'https://jhn-cde.github.io/portfolio/public'
+      path: 'https://jhn-cde.github.io/portfolio'
     }
   }
 }
