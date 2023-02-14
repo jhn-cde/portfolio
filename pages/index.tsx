@@ -4,8 +4,10 @@ import Layout from '@/components/layout/Layout'
 import AboutMe from '@/components/sections/aboutme/AboutMe'
 import MyProjects from '@/components/sections/myprojects/MyProjects'
 import GetInTouch from '@/components/sections/getintouch/GetInTouch'
+import { InferGetStaticPropsType } from 'next'
+import { getProjects } from 'lib/projects'
 
-export default function Home() {
+export default function Home({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout>
       <Head>
@@ -17,10 +19,20 @@ export default function Home() {
 
         <Intro />
         <AboutMe />
-        <MyProjects />
+        <MyProjects projects={projects}/>
         <GetInTouch />
         
       </main>
     </Layout>
   )
+}
+
+export const getStaticProps = async () => {
+  const allProjects = getProjects();
+  
+  return {
+    props: {
+      projects: allProjects, 
+    }
+  };
 }
