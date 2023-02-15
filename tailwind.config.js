@@ -14,20 +14,10 @@ module.exports = {
           DEFAULT: '#B8FFEE',
           'dark': '#A8EFDE'
         },
-        'primary-dark': {
-          'light': '#56788D',
-          DEFAULT: '#06283D',
-          'dark': '#00081D'
-        },
         'secondary': {
           'light': '#56788D',
           DEFAULT: '#06283D',
           'dark': '#00081D'
-        },
-        'secondary-dark': {
-          'light': '#FFFFFF',
-          DEFAULT: '#B8FFEE',
-          'dark': '#A8EFDE'
         },
         'accent': {
           'light': '#67D5FF',
