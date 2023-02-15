@@ -26,11 +26,11 @@ const Project = ({title, description, p_type, techs, img, type}: Props) => {
       </div>
       <div className={'absolute z-10 top-0 left-0 w-full h-full flex items-center bg-opacity-80 bg-secondary-light px-3 sm:px-16 sm:bg-opacity-25 sm:backdrop-blur-sm md:w-8/12 md:relative md:px-0 md:bg-transparent md:backdrop-blur-0 lg:items-end lg:mb-10 rounded-md'.concat(type==='r' ? ' ml-auto' : ' mr-atuo')}>
         <div className={'text-left'.concat(type==='r' ? ' md:text-right' : '')}>
-          <h4 className='md:px-4 lg:px-10'>{p_type}</h4>
-          <h3 className='md:px-4 lg:px-10 pb-2'>{title}</h3>
-          <p className='md:p-6 lg:pl-20 lg:px-10 md:bg-secondary md:text-primary rounded-md'>{description}</p>
+          <h4 className='md:px-4 lg:px-10 dark:text-accent'>{p_type}</h4>
+          <h3 className='md:px-4 lg:px-10 pb-2 dark:text-accent-light'>{title}</h3>
+          <p className={'md:p-6 lg:pl-20 lg:px-10 md:bg-secondary md:text-primary rounded-md'.concat(type==='r' ? '' : ' lg:pl-10')}>{description}</p>
           <div className={'md:p-4 lg:px-10 flex justify-end'.concat(type==='r' ? '' : ' md:justify-start')}>
-            {techs.split(', ').map(item => <p key={item} className='pl-6 text-accent'>{item}</p>)}
+            {techs.split(', ').map(item => <p key={item} className={'text-accent-dark dark:text-accent-light'.concat(type==='r' ? ' pl-6' : ' pr-6')}>{item}</p>)}
           </div>
         </div>
       </div>

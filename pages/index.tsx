@@ -6,24 +6,28 @@ import MyProjects from '@/components/sections/myprojects/MyProjects'
 import GetInTouch from '@/components/sections/getintouch/GetInTouch'
 import { InferGetStaticPropsType } from 'next'
 import { getProjects } from 'lib/projects'
+import store from 'store'
+import { Provider } from 'react-redux'
 
 export default function Home({ projects }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout>
-      <Head>
-        <title>Johan Huaman</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Provider store={store}>
+      <Layout>
+        <Head>
+          <title>Johan Huaman</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className="bg-gradient-to-r from-white to-primary-light">
+        <main className="bg-gradient-to-r from-primary-light to-primary dark:from-secondary-light dark:to-secondary text-secondary dark:text-primary">
 
-        <Intro />
-        <AboutMe />
-        <MyProjects projects={projects}/>
-        <GetInTouch />
-        
-      </main>
-    </Layout>
+          <Intro />
+          <AboutMe />
+          <MyProjects projects={projects}/>
+          <GetInTouch />
+          
+        </main>
+      </Layout>
+    </Provider>
   )
 }
 

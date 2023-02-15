@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux';
+import { selectTheme } from 'store';
 import Footer from '../footer/Footer';
 import NavBar from '../navbar/NavBar';
 import styles from './layout.module.css';
@@ -12,8 +14,10 @@ interface Props{
 export const siteTitle = 'Mi Portafolio';
 
 const Layout = ({ children }: Props) => {
+  const darkTheme = useSelector(selectTheme);
+  
   return (
-    <div>
+    <div className={darkTheme?'dark':''}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
