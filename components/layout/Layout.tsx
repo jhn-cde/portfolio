@@ -3,6 +3,7 @@ import React from 'react'
 import Footer from '../footer/Footer';
 import NavBar from '../navbar/NavBar';
 import styles from './layout.module.css';
+import Social from './social/Social';
 
 interface Props{
   children: JSX.Element[]
@@ -32,6 +33,9 @@ const Layout = ({ children }: Props) => {
       <div title='content' className={styles.content}>{children}</div>
       
       <Footer />
+
+      <Social />
+
     </div>
   )
 }
