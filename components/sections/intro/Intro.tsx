@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import styles from './intro.module.css'
 
@@ -10,6 +11,13 @@ const Intro = () => {
         <span className="text-secondary text-3xl font-bold sm:text-5xl  md:text-6xl lg:text-7xl" title='description'>Software Developer.</span>
         <p title='content' className="text-secondary mt-2">I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.</p>
       </div>
+      <Image
+        src={'/background.svg'}
+        width={540}
+        height={900}
+        alt='peru map background'
+        className='w-screen h-auto absolute right-0 top-0'
+      />
     </section>
   )
 }

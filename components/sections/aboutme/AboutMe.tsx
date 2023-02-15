@@ -5,7 +5,7 @@ import Description from './description/Description'
 
 const AboutMe = () => {
   return (
-    <section className='sm:min-h-screen bg-secondary lg:bg-secondary-light flex items-center lg:px-4 lg:py-12'  id={'aboutme'}>
+    <section className='relative sm:min-h-screen bg-secondary lg:bg-secondary-light flex items-center lg:px-4 lg:py-12'  id={'aboutme'}>
       <div className="md:max-w-6xl m-auto lg:py-0 lg:flex items-center sm:px md:px-20">
         <div className='mb-8 lg:mb-0 lg:absolute left-0 lg:min-h-screen'>
           <Image
