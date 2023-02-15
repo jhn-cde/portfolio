@@ -16,7 +16,7 @@ const Intro = () => {
         width={540}
         height={900}
         alt='peru map background'
-        className='w-screen h-auto absolute right-0 top-0'
+        className='hidden absolute right-0 top-0 md:block md:w-screen md:h-auto'
       />
     </section>
   )
