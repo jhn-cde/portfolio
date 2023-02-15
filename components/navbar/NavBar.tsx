@@ -2,10 +2,15 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import styles from './navbar.module.css'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
+import { useDispatch, useSelector } from 'react-redux'
+import { changeTheme, selectTheme } from 'store'
 
 const truescroll = 70
 
 const NavBar = () => {
+  const dispatch = useDispatch()
+  const darkTheme = useSelector(selectTheme)
+
   const [logo, setLogo] = useState('/logo.svg')
   const [scroll, setScroll] = useState(0)
   const [scrollUp, setScrollUp] = useState(false);
@@ -50,7 +55,7 @@ const NavBar = () => {
   }, [scrollUp])
 
   return (
-    <nav className={(scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-blue-500/40 bg-opacity-80 bg-white backdrop-blur-md':'')}>
+    <nav className={(scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-blue-500/40 bg-opacity-80 bg-primary-light backdrop-blur-md dark:bg-secondary dark:bg-opacity-70 dark:shadow-secondary':'')}>
       <div className='shrink-0'>
         <Image
           src={logo}
@@ -61,11 +66,11 @@ const NavBar = () => {
         />
       </div>
       <ul className='flex items-center'>
-        <li><BsFillMoonStarsFill className='cursor-pointer text-lg mr-6 text-secondary' /></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#aboutme">About Me</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#myprojects">My Projects</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary'><a href="#getintouch">Get In Touch</a></li>
-        <li><a className='bg-transparent border-accent border-2 px-4 py-2 text-accent font-mono rounded-md' href="#">Resume</a></li>
+        <li><BsFillMoonStarsFill className='cursor-pointer text-lg mr-6 text-secondary dark:text-primary' onClick={() => dispatch(changeTheme(!darkTheme))}/></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#aboutme">About Me</a></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#myprojects">My Projects</a></li>
+        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#getintouch">Get In Touch</a></li>
+        <li><a className='bg-transparent border-accent-dark border-2 px-4 py-2 text-accent-dark font-mono rounded-md' href="#">Resume</a></li>
       </ul>
     </nav>
   )
