@@ -2,7 +2,7 @@ import React from 'react'
 
 const GetInTouch = () => {
   return (
-    <section className="flex items-center">
+    <section className="flex items-center" id='getintouch'>
       <div className="md:max-w-2xl m-auto px-4 pt-0 py-16 lg:flex items-center sm:px md:px-20">
         <div className="text-center">
           <h2 className='pb-4'>Get in Touch</h2>
