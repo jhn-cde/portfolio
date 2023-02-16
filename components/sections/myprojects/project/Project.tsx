@@ -22,13 +22,13 @@ const Project = ({title, description, p_type, techs, img, type}: Props) => {
           alt='johan photo'
           className='object-contain w-auto h-auto md:w-full md:h-full'
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed backdrop-blur-0 hover:backdrop-blur-0 bg-opacity-30 bg-secondary hover:bg-transparent"></div>
+        <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed backdrop-blur-sm hover:backdrop-blur-none bg-opacity-100 rounded-md md:bg-opacity-60 bg-secondary hover:bg-transparent duration-500"></div>
       </div>
-      <div className={'absolute z-10 top-0 left-0 w-full h-full flex items-center bg-opacity-80 bg-secondary-light px-3 sm:px-16 sm:bg-opacity-25 sm:backdrop-blur-sm md:w-8/12 md:relative md:px-0 md:bg-transparent md:backdrop-blur-0 lg:items-end lg:mb-10 rounded-md'.concat(type==='r' ? ' ml-auto' : ' mr-atuo')}>
+      <div className={'absolute z-10 top-0 left-0 w-full h-full flex items-center bg-opacity-80 px-3 sm:px-16 sm:bg-opacity-25 sm:backdrop-blur-sm md:w-8/12 md:relative md:px-0 md:bg-transparent md:backdrop-blur-0 lg:items-end lg:mb-10 rounded-md'.concat(type==='r' ? ' ml-auto' : ' mr-atuo')}>
         <div className={'text-left'.concat(type==='r' ? ' md:text-right' : '')}>
           <h4 className='md:px-4 lg:px-10 dark:text-accent'>{p_type}</h4>
-          <h3 className='md:px-4 lg:px-10 pb-2 dark:text-accent-light'>{title}</h3>
-          <p className={'md:p-6 lg:pl-20 lg:px-10 md:bg-secondary md:text-primary rounded-md'.concat(type==='r' ? '' : ' lg:pl-10')}>{description}</p>
+          <h3 className='md:px-4 lg:px-10 pb-2 text-primary md:text-secondary dark:text-accent-light'>{title}</h3>
+          <p className={'py-3 md:py-6 md:border-0 md:p-6 lg:pl-20 lg:px-10 md:bg-secondary text-primary-dark md:rounded-md'.concat(type==='r' ? '' : ' lg:pl-10')}>{description}</p>
           <div className={'md:p-4 lg:px-10 flex justify-end'.concat(type==='r' ? '' : ' md:justify-start')}>
             {techs.split(', ').map(item => <p key={item} className={'text-accent-dark dark:text-accent-light'.concat(type==='r' ? ' pl-6' : ' pr-6')}>{item}</p>)}
           </div>
