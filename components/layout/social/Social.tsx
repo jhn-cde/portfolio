@@ -9,7 +9,7 @@ interface Props{
 
 const CustomLi = ({url, children, onHover}: Props) => {
   return(
-    <li className='mb-2 rounded-md p-1 backdrop-blur-sm bg-primary-light dark:bg-secondary-light bg-opacity-20 dark:bg-opacity-20 hover:bg-opacity-90 dark:hover:bg-opacity-90 hover:-translate-y-1 sm:mb-4 transition text-secondary  hover:text-secondary-dark dark:text-primary-dark dark:hover:text-primary-light duration-75' onMouseEnter={()=>onHover(true)} onMouseLeave={()=>onHover(false)}>
+    <li className='mb-2 rounded-md p-1 backdrop-blur-sm bg-primary dark:bg-primary-dark bg-opacity-20 dark:bg-opacity-20 hover:bg-opacity-90 dark:hover:bg-opacity-90 hover:-translate-y-1 sm:mb-4 transition text-secondary hover:text-secondary-3 dark:text-secondary-dark hover:dark:text-secondary-dark-3 duration-75' onMouseEnter={()=>onHover(true)} onMouseLeave={()=>onHover(false)}>
       <a href={url} className='text-xl' target={'_blank'}>
         {children}
       </a>
@@ -35,7 +35,7 @@ const Social = () => {
           <FaLinkedinIn />
         </CustomLi>
         <li>
-          <div className={'border-r-2 h-6 w-0 m-auto sm:h-32 '.concat(hover?' border-secondary-dark dark:border-primary-light':' border-secondary-light dark:border-primary')}></div>
+          <div className={'border-r-2 h-6 w-0 m-auto sm:h-32 '.concat(hover?' border-primary-3 dark:border-primary-dark-1':' border-primary dark:border-primary-dark')}></div>
         </li>
       </ul>
     </div>

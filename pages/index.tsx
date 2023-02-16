@@ -18,7 +18,7 @@ export default function Home({ projects }: InferGetStaticPropsType<typeof getSta
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="bg-gradient-to-r from-primary-light to-primary dark:from-secondary-light dark:to-secondary text-secondary dark:text-primary">
+        <main className=" bg-primary-1 text-secondary dark:bg-primary-dark-3 dark:text-secondary-dark">
 
           <Intro />
           <AboutMe />
