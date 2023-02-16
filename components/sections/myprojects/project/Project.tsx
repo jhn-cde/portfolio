@@ -62,7 +62,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
             ))}
           </div>
           <div 
-            className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary'.concat(
+            className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary md:dark:text-accent'.concat(
               type==='r' ? ' md:justify-end' : ''
           )}>
             {gh&&(
