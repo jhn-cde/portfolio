@@ -63,12 +63,12 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           </div>
           <div 
             className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary'.concat(
-              type==='r' ? ' justify-end' : ''
+              type==='r' ? ' md:justify-end' : ''
           )}>
             {gh&&(
               <a 
                 className={'mr-3 text-xl'.concat(
-                  type==='r' ? ' md:mr-0 ml-3' : ''
+                  type==='r' ? ' md:mr-0 md:ml-3' : ''
                 )} 
                 href={gh} 
                 target={'_blank'}
