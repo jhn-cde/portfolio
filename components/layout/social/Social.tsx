@@ -23,7 +23,7 @@ const Social = () => {
     setHover(hover)
   }
   return (
-    <div className='fixed right-1 bottom-0 z-50 sm:left-6 sm:right-auto'>
+    <div className='fixed right-3 bottom-0 z-50 sm:left-6 sm:right-auto lg:left-8'>
       <ul>
         <CustomLi url={"https://github.com/jhn-cde"} onHover={onHover}>
           <FaGithub />
@@ -35,7 +35,7 @@ const Social = () => {
           <FaLinkedinIn />
         </CustomLi>
         <li>
-          <div className={'border-r-2 h-6 w-0 m-auto sm:h-32 '.concat(hover?' border-primary-3 dark:border-primary-dark-1':' border-primary dark:border-primary-dark')}></div>
+          <div className={'border-r-2 h-12 w-0 m-auto sm:h-32 '.concat(hover?' border-primary-3 dark:border-primary-dark-1':' border-primary dark:border-primary-dark')}></div>
         </li>
       </ul>
     </div>
