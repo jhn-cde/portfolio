@@ -1,36 +1,90 @@
 import Image from 'next/image'
 import React from 'react'
+import { FaExternalLinkAlt, FaGithub, FaLink } from "react-icons/fa";
 import styles from './project.module.css'
 
 interface Props{
-  title: String,
-  description: String,
-  p_type: String,
-  techs: String,
-  img: String,
-  type: 'r'|'l'
+  title: string,
+  description: string,
+  p_type: string,
+  techs: string,
+  img: string,
+  type: 'r'|'l',
+  gh: string,
+  url: string
 }
 
-const Project = ({title, description, p_type, techs, img, type}: Props) => {
+const Project = ({title, description, p_type, techs, img, gh, url, type}: Props) => {
   return (
-    <div className='overflow-hidden flex items-center sm:h-60 sm:mx-28 md:mx-0 md:h-96 drop-shadow-xl'>
-      <div className={"w-full relative z-0 md:absolute md:w-6/12".concat(type==='l' ? ' md:right-0':'')}>
+    <div 
+      className='relative overflow-hidden rounded-md md:h-80 lg:h-96'
+    >
+      <div 
+        className={'absolute h-full'.concat(
+          type==='r' ? '':' right-0'
+        )}
+      >
         <Image
           src={'/'+img}
           width={900}
           height={600}
           alt='johan photo'
-          className='object-contain w-auto h-auto md:w-full md:h-full'
+          className='h-full w-auto rounded-md'
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed backdrop-blur-sm hover:backdrop-blur-none bg-opacity-100 rounded-md md:bg-opacity-60 bg-secondary hover:bg-transparent duration-500"></div>
+        <div 
+          className="hidden absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-primary-dark bg-opacity-50 backdrop-blur-sm rounded-md duration-500 hover:backdrop-blur-0 hover:bg-opacity-0 md:block"
+        />
       </div>
-      <div className={'absolute z-10 top-0 left-0 w-full h-full flex items-center bg-opacity-80 px-3 sm:px-16 sm:bg-opacity-25 sm:backdrop-blur-sm md:w-8/12 md:relative md:px-0 md:bg-transparent md:backdrop-blur-0 lg:items-end lg:mb-10 rounded-md'.concat(type==='r' ? ' ml-auto' : ' mr-atuo')}>
-        <div className={'text-left'.concat(type==='r' ? ' md:text-right' : '')}>
-          <h4 className='md:px-4 lg:px-10 dark:text-accent'>{p_type}</h4>
-          <h3 className='md:px-4 lg:px-10 pb-2 text-primary md:text-secondary dark:text-accent-light'>{title}</h3>
-          <p className={'py-3 md:py-6 md:border-0 md:p-6 lg:pl-20 lg:px-10 md:bg-secondary text-primary-dark md:rounded-md'.concat(type==='r' ? '' : ' lg:pl-10')}>{description}</p>
-          <div className={'md:p-4 lg:px-10 flex justify-end'.concat(type==='r' ? '' : ' md:justify-start')}>
-            {techs.split(', ').map(item => <p key={item} className={'text-accent-dark dark:text-accent-light'.concat(type==='r' ? ' pl-6' : ' pr-6')}>{item}</p>)}
+      <div 
+        className={'relative z-10 h-full bg-primary-dark py-6 text-secondary-dark my-auto bg-opacity-95 flex items-center md:w-8/12 md:bg-opacity-0 '.concat(
+          type==='r' ? ' md:ml-auto md:text-right' : ''
+        )}
+      >
+        <div className=''>
+          <h4 className='px-10'>{p_type}</h4>
+          <h3 className='px-10 mb-4 text-secondary-dark-3 md:text-secondary md:dark:text-secondary-dark-3'>{title}</h3>
+          <div className='mb-4 py-6 bg-primary-dark-1 bg-opacity-10 md:bg-opacity-80 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark'>
+            <p 
+              className={'px-10'.concat(
+                type==='r' ? '' : ' md:pl-10'
+              )}>{description}</p>
+          </div>
+          <div
+            className={'flex flex-wrap px-10 mb-2 text-accent-dark font-mono'.concat(
+              type==='r' ? ' md:justify-end' : ''
+          )}>
+            {techs.split(', ').map(item => (
+              <p 
+                key={item} 
+                className={'mr-2'.concat(
+                  type==='r' ? ' md:mr-0 md:ml-2' : ''
+              )}>{item}</p>
+            ))}
+          </div>
+          <div 
+            className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary'.concat(
+              type==='r' ? ' justify-end' : ''
+          )}>
+            {gh&&(
+              <a 
+                className={'mr-3 text-xl'.concat(
+                  type==='r' ? ' md:mr-0 ml-3' : ''
+                )} 
+                href={gh} 
+                target={'_blank'}
+              >
+                <FaGithub />
+              </a>
+            )}
+            {url&& (
+              <a 
+                className='ml-3 text-xl' 
+                href={url} 
+                target={'_blank'}
+              >
+                <FaExternalLinkAlt />
+              </a>
+            )}
           </div>
         </div>
       </div>

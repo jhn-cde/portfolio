@@ -55,7 +55,7 @@ const NavBar = () => {
   }, [scrollUp])
 
   return (
-    <nav className={(scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-blue-500/40 bg-opacity-80 bg-primary-light backdrop-blur-md dark:bg-secondary dark:bg-opacity-70 dark:shadow-secondary':'')}>
+    <nav className={(!scrollUp && scroll>=truescroll?' hidden':'flex py-5 px-4 sm:px-10 w-screen justify-between items-center fixed top-0 z-50').concat(scroll>=truescroll?' shadow-md shadow-primary bg-opacity-80 bg-primary backdrop-blur-md dark:bg-primary-dark dark:bg-opacity-70 dark:shadow-primary-dark':'')}>
       <div className='shrink-0'>
         <Image
           src={logo}
@@ -65,11 +65,11 @@ const NavBar = () => {
           className={'w-auto '.concat(scroll>=truescroll?'h-6 sm:h-10':'h-8 sm:h-12')}
         />
       </div>
-      <ul className='flex items-center'>
-        <li><BsFillMoonStarsFill className='cursor-pointer text-lg mr-6 text-secondary dark:text-primary' onClick={() => dispatch(changeTheme(!darkTheme))}/></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#aboutme">About Me</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#myprojects">My Projects</a></li>
-        <li className='hidden sm:block mr-6 font-semibold text-secondary dark:text-primary'><a href="#getintouch">Get In Touch</a></li>
+      <ul className='flex items-center text-secondary dark:text-secondary-dark-3'>
+        <li><BsFillMoonStarsFill className='cursor-pointer text-lg mr-6' onClick={() => dispatch(changeTheme(!darkTheme))}/></li>
+        <li className='hidden sm:block mr-6 font-semibold'><a href="#aboutme">About Me</a></li>
+        <li className='hidden sm:block mr-6 font-semibold'><a href="#myprojects">My Projects</a></li>
+        <li className='hidden sm:block mr-6 font-semibold'><a href="#getintouch">Get In Touch</a></li>
         <li><a className='bg-transparent border-accent-dark border-2 px-4 py-2 text-accent-dark font-mono rounded-md' href="#">Resume</a></li>
       </ul>
     </nav>
