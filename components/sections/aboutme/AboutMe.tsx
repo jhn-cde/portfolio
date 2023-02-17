@@ -14,6 +14,7 @@ const AboutMe = () => {
             height={441}
             alt='johan photo'
             className='w-auto lg:min-h-screen'
+            priority
           />
         </div>
 
