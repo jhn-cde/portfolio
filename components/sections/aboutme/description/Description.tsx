@@ -16,7 +16,7 @@ const Description = () => {
       <p className="hidden mb-4 lg:block">
         As a recent graduate, I am eager to start my professional career and utilize the skills and knowledge I have acquired during my studies. I am open to remote or on-site opportunities and am willing to work from anywhere.
       </p>
-      <h3 className='text-accent-dark'>My Key Skills</h3>
+      <h3 className='text-accent-dark'>Core Skills</h3>
       <div className='flex flex-wrap justify-around text-6xl'>
         <div className='text-blue-400 m-4'>
           <SiReact />
