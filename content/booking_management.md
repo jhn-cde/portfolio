@@ -1,8 +1,8 @@
 ---
 title: 'Booking Management'
-description: 'A web application built with React, to helps UNSAAC Computer Science students to check their progress and plan for graduation.'
-p_type: 'Personal Project'
-techs: 'React, JavaScript, HTML, CSS'
+description: 'A fullstack mobile app, Allows users to add new reservations and check pending reservations.'
+p_type: 'University Project'
+techs: 'TypeScript, React Native, ExpressJS'
 gh: 'https://github.com/jhn-cde/booking-management'
 url: ''
 img: 'plan_de_estudios.png'

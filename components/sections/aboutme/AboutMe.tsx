@@ -17,8 +17,8 @@ const AboutMe = () => {
           />
         </div>
 
-        <div className="px-4 pb-12 lg:w-6/12 ml-auto lg:p-6 bg-opacity-0 lg:bg-primary-2 lg:bg-opacity-70 lg:backdrop-blur-md">
-          <h2 className='text-3xl text-center mb-2 md:mb-4'>
+        <div className="px-4 pb-12 lg:w-6/12 ml-auto rounded-md lg:p-6 bg-opacity-0 lg:bg-primary-2 lg:bg-opacity-70 lg:backdrop-blur-md lg:dark:bg-primary-dark-2 lg:dark:bg-opacity-60 lg:dark:backdrop-blur-sm">
+          <h2 className='text-4xl text-center mb-2 md:mb-4 md:text-4xl lg:text-6xl'>
             About Me
           </h2>
           <Description />

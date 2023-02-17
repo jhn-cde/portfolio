@@ -56,19 +56,19 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
             {techs.split(', ').map(item => (
               <p 
                 key={item} 
-                className={'mr-2'.concat(
-                  type==='r' ? ' md:mr-0 md:ml-2' : ''
+                className={'mr-3'.concat(
+                  type==='r' ? ' md:mr-0 md:ml-8' : ' md:mr-8'
               )}>{item}</p>
             ))}
           </div>
           <div 
-            className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary'.concat(
-              type==='r' ? ' justify-end' : ''
+            className={'flex flex-wrap px-10 text-accent font-mono md:text-secondary md:dark:text-accent'.concat(
+              type==='r' ? ' md:justify-end' : ''
           )}>
             {gh&&(
               <a 
                 className={'mr-3 text-xl'.concat(
-                  type==='r' ? ' md:mr-0 ml-3' : ''
+                  type==='r' ? ' md:mr-0 md:ml-3' : ''
                 )} 
                 href={gh} 
                 target={'_blank'}

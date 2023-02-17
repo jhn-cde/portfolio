@@ -70,7 +70,7 @@ const NavBar = () => {
         <li className='hidden sm:block mr-6 font-semibold'><a href="#aboutme">About Me</a></li>
         <li className='hidden sm:block mr-6 font-semibold'><a href="#myprojects">My Projects</a></li>
         <li className='hidden sm:block mr-6 font-semibold'><a href="#getintouch">Get In Touch</a></li>
-        <li><a className='bg-transparent border-accent-dark border-2 px-4 py-2 text-accent-dark font-mono rounded-md' href="#">Resume</a></li>
+        <li><a className='bg-transparent border-accent-dark border-2 px-4 py-2 text-accent-dark font-mono rounded-md' href="https://drive.google.com/file/d/12iWLUDr5dVg6LVbezBlF1Ao7bJnpIX63/view?usp=share_link" target={'_blank'}>Resume</a></li>
       </ul>
     </nav>
   )

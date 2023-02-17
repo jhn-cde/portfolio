@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux';
 import { selectTheme } from 'store';
 import Footer from '../footer/Footer';
 import NavBar from '../navbar/NavBar';
-import styles from './layout.module.css';
 import Social from './social/Social';
 
 interface Props{
@@ -34,7 +33,7 @@ const Layout = ({ children }: Props) => {
       
       <NavBar />
       
-      <div title='content' className={styles.content}>{children}</div>
+      <div className="tracking-tight">{children}</div>
       
       <Footer />
 
