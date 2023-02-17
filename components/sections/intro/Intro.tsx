@@ -8,8 +8,8 @@ const Intro = () => {
       <div className="w-auto sm:w-10/12 relative z-10">
         <h6 className="text-accent font-bold font-mono sm:text-lg">Hi there! I'm</h6>
         <h1 className='text-accent text-4xl font-black sm:text-5xl md:text-6xl lg:text-8xl'>Johan Huaman.</h1>
-        <span className="text-secondary text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl dark:text-secondary-dark-1" title='description'>Software Developer.</span>
-        <p title='content' className="mt-2">I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.</p>
+        <span className="text-secondary text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl dark:text-secondary-dark-1">Software Developer.</span>
+        <p className="mt-2">I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.</p>
       </div>
       <Image
         src={'/background.svg'}

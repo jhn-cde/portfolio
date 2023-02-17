@@ -33,7 +33,7 @@ const Layout = ({ children }: Props) => {
       
       <NavBar />
       
-      <div title='content' className="tracking-tight">{children}</div>
+      <div className="tracking-tight">{children}</div>
       
       <Footer />
 
