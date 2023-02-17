@@ -56,8 +56,8 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
             {techs.split(', ').map(item => (
               <p 
                 key={item} 
-                className={'mr-2'.concat(
-                  type==='r' ? ' md:mr-0 md:ml-2' : ''
+                className={'mr-3'.concat(
+                  type==='r' ? ' md:mr-0 md:ml-8' : ' md:mr-8'
               )}>{item}</p>
             ))}
           </div>
