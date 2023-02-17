@@ -10,7 +10,7 @@ interface Props{
   children: JSX.Element[]
 }
 
-export const siteTitle = 'Mi Portafolio';
+export const siteTitle = 'Johan Huaman Portfolio';
 
 const Layout = ({ children }: Props) => {
   const darkTheme = useSelector(selectTheme);
@@ -21,7 +21,7 @@ const Layout = ({ children }: Props) => {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Hi there! I'm Johan Wilfredo Huaman Mendoza and this is my Portfolio,(learning Next.js)"
+          content="Hi there! I'm Johan Wilfredo Huaman Mendoza and this is my Portfolio, (made with Next.js and Tailwind CSS)"
         />
         <meta
           property="og:image"
