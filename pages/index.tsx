@@ -14,7 +14,7 @@ export default function Home({ projects }: InferGetStaticPropsType<typeof getSta
     <Provider store={store}>
       <Layout>
         <Head>
-          <title>Johan Huaman</title>
+          <title>Johan Huaman | Portfolio</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

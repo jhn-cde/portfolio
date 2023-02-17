@@ -6,7 +6,7 @@ techs: 'Python, Django'
 gh: 'https://github.com/jhn-cde/transport_path_planning'
 url: ''
 img: 'plan_de_estudios.png'
-display: true
+display: false
 num: 5
 ---
 # Show

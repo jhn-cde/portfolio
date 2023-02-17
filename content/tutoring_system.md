@@ -5,7 +5,7 @@ p_type: 'University Project'
 techs: 'C#, SQL Server, Visual Studio 2019'
 gh: 'https://github.com/jhn-cde/Sistema_Escritorio_Gestion_Silabos'
 url: ''
-img: 'plan_de_estudios.png'
+img: 'tutoring.png'
 display: true
 num: 4
 ---

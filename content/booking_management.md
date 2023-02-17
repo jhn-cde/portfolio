@@ -5,7 +5,7 @@ p_type: 'University Project'
 techs: 'TypeScript, React Native, ExpressJS'
 gh: 'https://github.com/jhn-cde/booking-management'
 url: ''
-img: 'plan_de_estudios.png'
+img: 'booking_management.png'
 display: true
 num: 0
 ---

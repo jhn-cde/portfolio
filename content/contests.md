@@ -5,7 +5,7 @@ p_type: 'Personal Project'
 techs: 'Python, C++, OOP'
 gh: ''
 url: ''
-img: 'plan_de_estudios.png'
+img: 'contests.png'
 display: true
 num: 1
 ---
