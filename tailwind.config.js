@@ -12,9 +12,9 @@ module.exports = {
         current: 'currentColor',
         'primary': {
           1: '#FFFFFF',
-          2: '#DBDBFF',
-          3: '#56788D',
-          DEFAULT: '#DBDBFF',
+          2: '#DFF6FF',
+          3: '#92B4EC',
+          DEFAULT: '#DFF6FF',
           dark: {
             1: '#56788D',
             2: '#06283D',
@@ -28,10 +28,10 @@ module.exports = {
           3: '#00081D',
           DEFAULT: '#06283D',
           dark: {
-            1: '#56788D',
-            2: '#DBDBFF',
+            1: '#92B4EC',
+            2: '#DFF6FF',
             3: '#FEFEFF',
-            DEFAULT: '#CBCBFF'
+            DEFAULT: '#DFF6FF'
           }
         },
         'accent': {
