@@ -1,10 +1,11 @@
 import { getStaticProps } from '@/pages/index'
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './myprojects.module.css'
 import Project from './project/Project'
 
 const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const [more, setMore] = useState(false)
 
   return (
     <section className='sm:min-h-screenflex items-center' id={'myprojects'}>
@@ -18,12 +19,18 @@ const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>
               const {title, description, p_type, img, techs, gh, url} = project.data
               const type = index%2 ? 'l' : 'r'
               return(
-                <div key={index} className='mb-16'>
+                <div key={index} className={'transition duration-500 overflow-hidden'.concat(!more && index >= 3?' h-0 opacity-0': ' opacity-100 mb-16 h-auto')}>
                   <Project title={title} description={description} p_type={p_type} img={img} techs={techs} gh={gh} url={url} type={type}/>
                 </div>  
               )
             })
           }
+        </div>
+        <div className='flex justify-center'>
+          <button 
+            className='rounded-md border-2 border-accent-dark text-accent-dark px-4 py-2'
+            onClick={()=>{setMore(!more)}}
+          >{more?'Show less':'Show more'}</button>
         </div>
       </div>
     </section>
