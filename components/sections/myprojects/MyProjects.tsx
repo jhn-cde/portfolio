@@ -9,7 +9,7 @@ const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>
   return (
     <section className='sm:min-h-screenflex items-center' id={'myprojects'}>
       <div className='md:max-w-6xl m-auto px-4 pt-12 sm:px md:px-20'>
-        <h2 className='text-3xl text-center my-4 lg:my-10'>
+        <h2 className='text-4xl text-center my-4 lg:my-10 lg:text-6xl'>
           My Projects
         </h2>
         <div className='mb-12'>
