@@ -20,7 +20,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
       className='relative overflow-hidden rounded-md md:h-80 lg:h-96'
     >
       <div 
-        className={'absolute h-full'.concat(
+        className={'absolute h-full w-full md:w-auto md:h-full'.concat(
           type==='r' ? '':' right-0'
         )}
       >
@@ -29,7 +29,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           width={900}
           height={600}
           alt='johan photo'
-          className='h-full w-auto rounded-md'
+          className='object-cover h-full w-auto rounded-md'
         />
         <div 
           className="hidden absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-primary-dark bg-opacity-50 backdrop-blur-sm rounded-md duration-500 hover:backdrop-blur-0 hover:bg-opacity-0 md:block"
@@ -41,9 +41,9 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
         )}
       >
         <div className=''>
-          <h4 className='px-10'>{p_type}</h4>
+          <p className='px-10 font-normal text-accent-dark mb-1'>{p_type}</p>
           <h3 className='px-10 mb-4 text-secondary-dark-3 md:text-secondary md:dark:text-secondary-dark-3'>{title}</h3>
-          <div className='mb-4 py-6 bg-primary-dark-1 bg-opacity-10 md:bg-opacity-80 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark'>
+          <div className='mb-4 bg-primary-dark-1 bg-opacity-0 md:py-6 md:bg-opacity-80 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark'>
             <p 
               className={'px-10'.concat(
                 type==='r' ? '' : ' md:pl-10'
@@ -72,6 +72,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                 )} 
                 href={gh} 
                 target={'_blank'}
+                aria-label={`github link`}
               >
                 <FaGithub />
               </a>
@@ -81,6 +82,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                 className='ml-3 text-xl' 
                 href={url} 
                 target={'_blank'}
+                aria-label={`url`}
               >
                 <FaExternalLinkAlt />
               </a>

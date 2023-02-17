@@ -10,7 +10,12 @@ interface Props{
 const CustomLi = ({url, children, onHover}: Props) => {
   return(
     <li className='mb-2 rounded-md p-1 backdrop-blur-sm bg-primary dark:bg-primary-dark bg-opacity-20 dark:bg-opacity-20 hover:bg-opacity-90 dark:hover:bg-opacity-90 hover:-translate-y-1 sm:mb-4 transition text-secondary hover:text-secondary-3 dark:text-secondary-dark hover:dark:text-secondary-dark-3 duration-75' onMouseEnter={()=>onHover(true)} onMouseLeave={()=>onHover(false)}>
-      <a href={url} className='text-xl' target={'_blank'}>
+      <a 
+        href={url} 
+        className='text-xl' 
+        target={'_blank'}
+        aria-label={`social link ${url}`}
+      >
         {children}
       </a>
     </li>
