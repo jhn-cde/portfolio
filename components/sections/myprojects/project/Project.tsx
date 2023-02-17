@@ -28,7 +28,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           src={'/'+img}
           width={900}
           height={600}
-          alt='johan photo'
+          alt='project img'
           className='object-cover h-full w-auto rounded-md'
         />
         <div 
