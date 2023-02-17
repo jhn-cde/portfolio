@@ -12,7 +12,7 @@ const Intro = () => {
         <p className="mt-2">I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.</p>
       </div>
       <Image
-        src={'/background.svg'}
+        src={'/background.webp'}
         width={540}
         height={900}
         alt='background'
