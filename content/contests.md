@@ -5,7 +5,7 @@ p_type: 'Personal Project'
 techs: 'Python, C++, OOP'
 gh: ''
 url: ''
-img: 'contests.png'
+img: 'contests.webp'
 display: true
 num: 1
 ---

@@ -5,7 +5,7 @@ p_type: 'University Project'
 techs: 'C#, SQL Server, Visual Studio 2019'
 gh: 'https://github.com/Jeremylazm/AppSistemaTutoria'
 url: ''
-img: 'tutoring.png'
+img: 'tutoring.webp'
 display: true
 num: 4
 ---

@@ -5,7 +5,7 @@ p_type: 'Personal Project'
 techs: 'React, JavaScript'
 gh: 'https://github.com/jhn-cde/plan-estudios-unsaac'
 url: ''
-img: 'plan_de_estudios.png'
+img: 'plan_de_estudios.webp'
 display: true
 num: 2
 ---

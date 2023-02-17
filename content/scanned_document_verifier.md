@@ -5,7 +5,7 @@ p_type: 'University Project'
 techs: 'Python, Google Colab, Keras'
 gh: ''
 url: ''
-img: 'validation.png'
+img: 'validation.webp'
 display: true
 num: 4
 ---
