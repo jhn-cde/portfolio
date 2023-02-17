@@ -1,4 +1,7 @@
 import React from 'react'
+import { SiJavascript, SiTypescript, SiCplusplus, SiReact, SiPython, SiLinux, SiGit } from 'react-icons/si'
+import { FcLinux } from 'react-icons/fc'
+
 import styles from './description.module.css'
 
 const Description = () => {
@@ -10,9 +13,30 @@ const Description = () => {
       <p className='mb-4'>
         I am highly motivated with a passion for technology and a strong desire to learn and grow as a professional. I am a fast learner, adaptable and always willing to take on new challenges.
       </p>
-      <p className="hidden mb-3 lg:block">
+      <p className="hidden mb-4 lg:block">
         As a recent graduate, I am eager to start my professional career and utilize the skills and knowledge I have acquired during my studies. I am open to remote or on-site opportunities and am willing to work from anywhere.
       </p>
+      <h3 className='text-accent-dark'>My Key Skills</h3>
+      <div className='flex flex-wrap justify-around text-6xl'>
+        <div className='text-blue-400 m-4'>
+          <SiReact />
+        </div>
+        <div className='text-[#3178C6] m-4'>
+          <SiTypescript />
+        </div>
+        <div className='text-gray-400 dark:text-white m-4'>
+          <SiPython />
+        </div>
+        <div className='text-blue-600 m-4'>
+          <SiCplusplus />
+        </div>
+        <div className='text-black dark:text-white p-4'>
+          <SiLinux className=' '/>
+        </div>
+        <div className='text-[#F14E32] m-4'>
+          <SiGit />
+        </div>
+      </div>
       {/* <p className="text-primary-light lg:text-secondary">
         Technologies I've been working with recently:
       </p>
