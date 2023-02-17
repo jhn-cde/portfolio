@@ -13,7 +13,7 @@ const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>
         <h2 className='text-4xl text-center my-4 lg:my-10 lg:text-6xl'>
           My Projects
         </h2>
-        <div className='mb-12'>
+        <div className='mb-0'>
           {
             projects.map((project, index) => {
               const {title, description, p_type, img, techs, gh, url} = project.data
@@ -26,9 +26,9 @@ const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>
             })
           }
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center m-auto mb-12'>
           <button 
-            className='rounded-md border-2 border-accent-dark text-accent-dark px-4 py-2'
+            className='rounded-md border-2 border-accent-dark text-accent-dark px-4 py-2 min-h-full w-36'
             onClick={()=>{setMore(!more)}}
           >{more?'Show less':'Show more'}</button>
         </div>
