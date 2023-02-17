@@ -17,6 +17,7 @@ const Intro = () => {
         height={900}
         alt='peru map background'
         className='hidden absolute right-0 top-0 z-0 md:block md:w-screen md:h-auto'
+        priority
       />
     </section>
   )
