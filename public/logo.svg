@@ -2,15 +2,15 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="504mm"
-   height="132mm"
-   viewBox="0 0 504 132"
+   width="271.99057mm"
+   height="124.80029mm"
+   viewBox="0 0 271.99057 124.80029"
    version="1.1"
    id="svg5"
    inkscape:export-filename="/home/jhn/Pictures/logo.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,21 +27,24 @@
      inkscape:document-units="mm"
      showgrid="false"
      width="200mm"
-     inkscape:zoom="1.1841377"
-     inkscape:cx="496.56387"
-     inkscape:cy="624.92732"
+     inkscape:zoom="0.35655375"
+     inkscape:cx="953.57293"
+     inkscape:cy="562.32757"
      inkscape:window-width="1366"
-     inkscape:window-height="732"
+     inkscape:window-height="740"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g28743" />
+     inkscape:current-layer="g28743"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-1.0499091,-7.1998654)">
     <circle
        style="display:none;fill:#051620;fill-opacity:1;stroke:none;stroke-width:1.40771;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0.977051;paint-order:markers fill stroke"
        id="path20919"
@@ -108,36 +111,39 @@
     <g
        id="g28743"
        transform="matrix(1.2598454,0,0,1.2598454,-75.87273,-55.940163)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.75px;line-height:1.25;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';text-align:start;text-anchor:start;fill:#47b5ff;fill-opacity:1;stroke-width:1.27889"
-         x="60.342682"
-         y="147.58978"
+      <g
+         aria-label="J"
          id="text25552"
-         inkscape:label="J"><tspan
-           sodipodi:role="line"
-           id="tspan25550"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:158.75px;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';text-align:start;text-anchor:start;fill:#47b5ff;fill-opacity:1;stroke-width:1.27889"
-           x="60.342682"
-           y="147.58978">J</tspan></text>
+         style="font-weight:bold;font-size:158.75px;line-height:1.25;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';fill:#47b5ff;stroke-width:1.27889"
+         inkscape:label="J">
+        <path
+           d="m 62.723932,113.14103 c 0.9525,21.2725 14.9225,36.03625 38.734998,36.03625 22.225,0 38.57625,-12.065 38.57625,-39.0525 V 50.117283 h -25.55875 v 59.848747 c 0,10.795 -3.81,16.35125 -13.17625,16.35125 -7.778748,0 -12.223748,-4.7625 -12.699998,-13.17625 z"
+           id="path303" />
+      </g>
       <circle
          style="fill:#ffffff;fill-opacity:1;stroke-width:0.157678;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:0.977051;paint-order:markers fill stroke"
          id="path28656"
          cx="76.057205"
          cy="89.382599"
          r="15" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:70.0042px;line-height:1.25;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';text-align:start;text-anchor:start;fill:#47b5ff;fill-opacity:1;stroke-width:1.27889"
-         x="138.83098"
-         y="147.63707"
+      <g
+         aria-label="ohan"
          id="text25552-3"
-         inkscape:label="J"><tspan
-           sodipodi:role="line"
-           id="tspan25550-6"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:70.0042px;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';text-align:start;text-anchor:start;fill:#47b5ff;fill-opacity:1;stroke-width:1.27889"
-           x="138.83098"
-           y="147.63707">ohan</tspan></text>
+         style="font-weight:bold;font-size:70.0042px;line-height:1.25;font-family:Calibre;-inkscape-font-specification:'Calibre Bold';fill:#47b5ff;stroke-width:1.27889"
+         inkscape:label="J">
+        <path
+           d="m 172.29299,131.88612 c 0,-9.73058 -6.51039,-16.45098 -16.10097,-16.45098 -9.52057,0 -16.10097,6.7204 -16.10097,16.45098 0,9.73059 6.5804,16.45099 16.10097,16.45099 9.59058,0 16.10097,-6.7204 16.10097,-16.45099 z m -10.78065,0 c 0,4.34026 -1.89011,7.35045 -5.32032,7.35045 -3.3602,0 -5.25031,-3.01019 -5.25031,-7.35045 0,-4.34026 1.89011,-7.42044 5.25031,-7.42044 3.43021,0 5.32032,3.08018 5.32032,7.42044 z"
+           id="path408" />
+        <path
+           d="m 176.56323,147.63707 h 10.99066 v -19.04114 c 0.56003,-2.17013 2.38014,-3.43021 4.55027,-3.43021 2.80017,0 4.13025,1.89011 4.13025,4.48027 v 17.99108 h 10.92065 v -20.65124 c 0,-7.00042 -4.13024,-11.55069 -11.13066,-11.55069 -3.64022,0 -6.72041,1.47008 -8.47051,3.4302 v -16.731 h -10.99066 z"
+           id="path410" />
+        <path
+           d="m 240.96703,147.63707 v -19.32116 c 0,-8.19049 -5.1103,-12.95078 -14.07084,-12.95078 -8.12049,0 -13.51081,4.83029 -14.42087,10.92066 h 10.36062 c 0.49003,-1.40009 1.6801,-2.31014 3.71023,-2.31014 2.66016,0 3.85023,1.7501 3.85023,3.78023 v 2.03012 c -1.26008,-0.91006 -4.34026,-1.75011 -6.93042,-1.75011 -6.86041,0 -12.11073,3.92024 -12.11073,10.0106 0,6.6504 5.25032,10.15061 11.48069,10.15061 3.3602,0 6.51039,-1.12006 7.56046,-2.17013 v 1.6101 z m -10.57063,-8.82053 c -0.70004,1.26008 -2.59016,2.10013 -4.62028,2.10013 -2.17013,0 -4.34026,-0.91006 -4.34026,-3.08019 0,-2.10012 2.17013,-3.01018 4.34026,-3.01018 2.03012,0 3.92024,0.84005 4.62028,2.17013 z"
+           id="path412" />
+        <path
+           d="m 246.3574,147.63707 h 10.99066 v -19.04114 c 0.56003,-2.17013 2.38014,-3.43021 4.55027,-3.43021 2.80017,0 4.13025,1.89011 4.13025,4.48027 v 17.99108 h 10.92065 v -20.65124 c 0,-7.00042 -4.13024,-11.55069 -11.13066,-11.55069 -3.64022,0 -6.72041,1.47008 -8.47051,3.4302 v -2.73016 H 246.3574 Z"
+           id="path414" />
+      </g>
     </g>
   </g>
 </svg>
