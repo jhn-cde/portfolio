@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { SiCplusplus, SiCsharp, SiExpress, SiGooglecolab, SiJavascript, SiKeras, SiMysql, SiPython, SiReact, SiTypescript } from 'react-icons/si';
+import { SiCplusplus, SiCsharp, SiExpress, SiGooglecolab, SiJavascript, SiKeras, SiMicrosoftsqlserver, SiMysql, SiPython, SiReact, SiTypescript } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { DiMsqlServer, DiMysql } from 'react-icons/di';
 
@@ -28,7 +28,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
       case 'ReactNative':
         return <TbBrandReactNative className='mr-3'/>
       case 'SQLServer':
-        return <DiMsqlServer className='mr-3'/>
+        return <SiMicrosoftsqlserver className='mr-3'/>
       case 'SQLLite':
         return <DiMysql className='mr-3'/>
       case 'Python':
@@ -75,38 +75,38 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
       >
         <div className='w-full'>
           <p className={'px-10 font-normal text-accent-dark'.concat(type==='r' ? ' md:pl-0' : '')}>{p_type}</p>
-          <h3 className={'px-10 text-secondary-dark-3 md:text-secondary pb-5 md:pb-0 md:dark:text-secondary-dark-3'.concat(type==='r' ? ' md:pl-0' : '')}>{title}</h3>
-          <div className={'relative mb-4 bg-primary-dark-1 bg-opacity-0 md:py-6 md:bg-opacity-95 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark md:absolute'.concat(
+          <h3 className={'px-10 mb-4 text-secondary-dark-3 md:text-secondary md:pb-0 md:dark:text-secondary-dark-3'.concat(type==='r' ? ' md:pl-0' : '')}>{title}</h3>
+          <div className={'relative mb-4 md:absolute'.concat(
             type==='r' ? ' md:-left-3/4' : ' md:-right-1/2'
           )}>
             <p 
-              className={'px-10 mb-2 pb-4'.concat(
+              className={'bg-primary-dark-1 bg-opacity-0 md:py-6 md:bg-opacity-95 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark px-10 mb-2 pb-4'.concat(
                 type==='r' ? '' : ' md:pl-10'
               )}>{description}</p>
             <div 
-              className={'flex items-center flex-wrap px-10 font-mono'.concat(
+              className={'flex items-center flex-wrap px-10 font-mono text-secondary-dark-1 md:text-secondary-1 md:dark:text-secondary-dark-2'.concat(
                 type==='r' ? ' md:justify-end' : ''
             )}>
               {techs.split(', ').map(item => (
-              <div className='flex items-center text-lg text-white' key={item}>
+              <div className=' flex items-center text-base' key={item}>
                 {getTechIcon(item)}
               </div>))}
               {url || gh && '|'}
               {gh&&(
                 <a 
-                  className={'ml-3 text-xl text-accent hover:text-accent-light hover:text-2xl'.concat(
+                  className={'relative text-xl text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-3 p-1.5 rounded-md hover:-translate-y-1'.concat(
                     type==='r' ? ' md:mr-0 md:ml-3' : ''
                   )} 
                   href={gh} 
                   target={'_blank'}
                   aria-label={`github link`}
                 >
-                  <FaGithub />
+                  <FaGithub className='relative' />
                 </a>
               )}
               {url && (
                 <a 
-                  className='ml-3 text-xl text-accent hover:text-accent-light hover:text-2xl' 
+                  className='relative text-xl text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-3 p-1.5 rounded-md hover:-translate-y-1' 
                   href={url} 
                   target={'_blank'}
                   aria-label={`url`}

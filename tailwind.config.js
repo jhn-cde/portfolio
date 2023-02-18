@@ -35,9 +35,9 @@ module.exports = {
           }
         },
         'accent': {
-          'light': '#67D5FF',
+          'light': '#77E5FF',
           DEFAULT: '#47B5FF',
-          'dark': '#1795DF'
+          'dark': '#0068DF'
         }
       },
     },
