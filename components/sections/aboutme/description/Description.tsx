@@ -1,8 +1,5 @@
 import React from 'react'
-import { SiJavascript, SiTypescript, SiCplusplus, SiReact, SiPython, SiLinux, SiGit } from 'react-icons/si'
-import { FcLinux } from 'react-icons/fc'
-
-import styles from './description.module.css'
+import { SiTypescript, SiCplusplus, SiReact, SiPython, SiLinux, SiGit } from 'react-icons/si'
 
 const Description = () => {
   return (

@@ -1,7 +1,6 @@
 import { getStaticProps } from '@/pages/index'
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-import React, { useEffect, useState } from 'react'
-import styles from './myprojects.module.css'
+import type { InferGetStaticPropsType } from 'next'
+import React, { useState } from 'react'
 import Project from './project/Project'
 
 const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
