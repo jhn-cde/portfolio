@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { SiCplusplus, SiCsharp, SiExpress, SiGooglecolab, SiJavascript, SiKeras, SiMicrosoftsqlserver, SiMysql, SiPython, SiReact, SiTypescript } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
-import { DiMsqlServer, DiMysql } from 'react-icons/di';
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { SiCplusplus, SiGooglecolab, SiKeras, SiMicrosoftsqlserver, SiPython, SiReact } from 'react-icons/si';
+import { TbBrandGithub, TbBrandReactNative, TbCSharp } from 'react-icons/tb';
+import { DiMysql } from 'react-icons/di';
+import { IoLogoJavascript } from 'react-icons/io';
 
 interface Props{
   title: string,
@@ -20,29 +21,29 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
   const getTechIcon = (tech: string) => {
     switch (tech) {
       case 'JavaScript':
-        return <SiJavascript className='mr-3'/>
+        return <IoLogoJavascript title="JavaScript" className='mr-3'/>
       case 'TypeScript':
-        return <SiTypescript className='mr-3'/>
+        return <span title="TypeScript" className='font-mono pt-0.5 font-extrabold mr-3'>TS</span>
       case 'React':
-        return <SiReact className='mr-3'/>
+        return <SiReact title="React" className='mr-3'/>
       case 'ReactNative':
-        return <TbBrandReactNative className='mr-3'/>
+        return <TbBrandReactNative title="React Native" className='mr-3'/>
       case 'SQLServer':
-        return <SiMicrosoftsqlserver className='mr-3'/>
+        return <SiMicrosoftsqlserver title="Microsoft SQL Server" className='mr-3'/>
       case 'SQLLite':
-        return <DiMysql className='mr-3'/>
+        return <DiMysql title="MySQL" className='mr-3'/>
       case 'Python':
-        return <SiPython className='mr-3'/>
+        return <SiPython title="Python" className='mr-3'/>
       case 'Cpp':
-        return <SiCplusplus className='mr-3'/>
+        return <SiCplusplus title="C++" className='mr-3'/>
       case 'CSharp':
-        return <SiCsharp className='mr-3'/>
+        return <TbCSharp title="C#" className='mr-3'/>
       case 'Keras':
-        return <SiKeras className='mr-3'/>
+        return <SiKeras title="Keras" className='mr-3'/>
       case 'Colab':
-        return <SiGooglecolab className='mr-3'/>
+        return <SiGooglecolab title="Google Colab" className='mr-3'/>
       case 'Express':
-        return <SiExpress className='mr-3'/>
+        return <span title="Express JS" className='font-mono font-semibold mr-3'>ex</span>
       default:
         break;
     }
@@ -53,7 +54,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
       className='relative rounded-md md:h-80 lg:h-96'
     >
       <div 
-        className={'absolute h-full w-full overflow-hidden md:w-7/12 md:h-full'.concat(
+        className={'hidden absolute h-full w-full overflow-hidden md:block md:w-7/12 md:h-full'.concat(
           type==='r' ? '':' right-0'
         )}
       >
@@ -84,24 +85,24 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                 type==='r' ? '' : ' md:pl-10'
               )}>{description}</p>
             <div 
-              className={'flex items-center flex-wrap px-10 font-mono text-secondary-dark-1 md:text-secondary-1 md:dark:text-secondary-dark-2'.concat(
+              className={'flex items-center flex-wrap px-10 font-mono text-2xl text-secondary-dark-1 md:text-secondary-1 md:dark:text-secondary-dark-1'.concat(
                 type==='r' ? ' md:justify-end' : ''
             )}>
               {techs.split(', ').map(item => (
-              <div className=' flex items-center text-base' key={item}>
+              <div className=' flex items-center' key={item}>
                 {getTechIcon(item)}
               </div>))}
               {url || gh && '|'}
               {gh&&(
                 <a 
-                  className={'relative text-xl text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-3 p-1.5 rounded-md hover:-translate-y-1'.concat(
+                  className={'relative text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-3 p-1.5 rounded-md hover:-translate-y-1'.concat(
                     type==='r' ? ' md:mr-0 md:ml-3' : ''
                   )} 
                   href={gh} 
                   target={'_blank'}
                   aria-label={`github link`}
                 >
-                  <FaGithub className='relative' />
+                  <TbBrandGithub className='relative' />
                 </a>
               )}
               {url && (
