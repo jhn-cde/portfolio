@@ -11,14 +11,16 @@ const Intro = () => {
         <span className="text-secondary text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl dark:text-secondary-dark-1">Software Developer.</span>
         <p className="mt-2">I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.</p>
       </div>
-      <Image
-        src={'/background.webp'}
-        width={540}
-        height={900}
-        alt='background'
-        className='hidden absolute right-0 top-0 z-0 md:block md:w-screen md:h-auto'
-        priority
-      />
+      <div className='hidden md:block'>
+        <Image
+          src={'/background.webp'}
+          width={2500}
+          height={1440}
+          alt='background'
+          className='absolute right-0 top-0 z-0 md:w-screen md:h-auto'
+          priority
+        />
+      </div>
     </section>
   )
 }
