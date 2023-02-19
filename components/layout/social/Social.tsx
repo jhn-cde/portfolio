@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
+import { SiGithub } from 'react-icons/si'
+import { TbBrandGithub } from 'react-icons/tb'
 
 interface Props{
   url: string,
@@ -12,7 +14,7 @@ const CustomLi = ({url, children, onHover}: Props) => {
     <li className='mb-2 rounded-md p-1 backdrop-blur-sm bg-primary dark:bg-primary-dark bg-opacity-20 dark:bg-opacity-20 hover:bg-opacity-90 dark:hover:bg-opacity-90 hover:-translate-y-1 sm:mb-4 transition text-secondary hover:text-secondary-3 dark:text-secondary-dark hover:dark:text-secondary-dark-3 duration-75' onMouseEnter={()=>onHover(true)} onMouseLeave={()=>onHover(false)}>
       <a 
         href={url} 
-        className='text-xl' 
+        className='text-2xl md:text-xl' 
         target={'_blank'}
         aria-label={`social link ${url}`}
       >
@@ -31,7 +33,7 @@ const Social = () => {
     <div className='fixed right-3 bottom-0 z-50 sm:left-6 sm:right-auto lg:left-8'>
       <ul>
         <CustomLi url={"https://github.com/jhn-cde"} onHover={onHover}>
-          <FaGithub />
+          <TbBrandGithub />
         </CustomLi>
         <CustomLi url={"https://www.instagram.com/johan.cde/"} onHover={onHover} > 
           <FaInstagram />
