@@ -10,8 +10,8 @@ const AboutMe = () => {
         <div className='mb-8 lg:mb-0 lg:absolute left-0 lg:h-full'>
           <Image
             src={'/profile.webp'}
-            width={500}
-            height={441}
+            width={1000}
+            height={833}
             alt='johan photo'
             className='w-auto lg:h-full'
             priority
