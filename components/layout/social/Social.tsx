@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
-import { SiGithub } from 'react-icons/si'
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { TbBrandGithub } from 'react-icons/tb'
 
 interface Props{

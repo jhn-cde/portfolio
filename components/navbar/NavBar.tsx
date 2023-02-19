@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import styles from './navbar.module.css'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeTheme, selectTheme } from 'store'
