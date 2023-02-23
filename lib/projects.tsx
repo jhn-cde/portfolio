@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
 
-const projectDir = join(process.cwd(), 'content')
+const projectDir = join(process.cwd(), 'content/projects')
 
 export function getProjects(){
   const fileNames = readdirSync(projectDir);
