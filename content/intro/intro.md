@@ -2,6 +2,6 @@
 intro: 'Hi there! I’m'
 title: 'Johan Huaman'
 subtitle: 'Software Developer'
-description: 'I’m a recent computer science graduate with passion for programming. Seeking job opportunities to apply my skills and stay current with the latest technologies.'
+description: 'I’m a passionate programmer and Machine Learning lover. I’m a recent graduate from the University of San Antonio Abad del Cusco.'
 ---
 # Intro
