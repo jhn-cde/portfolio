@@ -1,12 +1,13 @@
-import { SiCplusplus, SiGit, SiGooglecolab, SiKeras, SiLinux, SiMicrosoftsqlserver, SiPython, SiReact, SiTypescript } from 'react-icons/si';
-import { TbBrandReactNative, TbCSharp } from 'react-icons/tb';
+import { SiCplusplus, SiGit, SiGooglecolab, SiIcon, SiJavascript, SiKeras, SiLinux, SiMicrosoftsqlserver, SiPython, SiReact, SiTypescript } from 'react-icons/si';
+import { TbBrandGithub, TbBrandReactNative, TbCSharp } from 'react-icons/tb';
 import { DiMysql } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
+import { FaExternalLinkAlt, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export const getTechIcon = (name: string) => {
   switch (name) {
     case 'JavaScript':
-      return <IoLogoJavascript title="JavaScript"/>
+      return <SiJavascript title="JavaScript"/>
     case 'TypeScript':
       return <SiTypescript title="TypeScript" />
     case 'React':
@@ -33,8 +34,16 @@ export const getTechIcon = (name: string) => {
       return <SiLinux title='Linux'/>
     case 'Git':
       return <SiGit title='Git'/>
+    case 'GitHub':
+      return <TbBrandGithub title='GitHub'/>
+    case 'Instagram':
+      return <FaInstagram title='Instagram'/>
+    case 'LinkedIn':
+      return <FaLinkedinIn title='LinkedIn'/>
+    case 'ExternalLink':
+      return <FaExternalLinkAlt title='External Link'/>
     default:
       console.log(`"${name}" not found!!!`)
-      break;
+      return <SiIcon title='Git'/>
   }
 }

@@ -1,8 +1,6 @@
 import { getTechIcon } from 'lib/getIcon';
 import Image from 'next/image'
 import React from 'react'
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { TbBrandGithub } from 'react-icons/tb';
 
 interface Props{
   title: string,
@@ -70,7 +68,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                   target={'_blank'}
                   aria-label={`github link`}
                 >
-                  <TbBrandGithub className='relative' />
+                  {getTechIcon('GitHub')}
                 </a>
               )}
               {url && (
@@ -80,7 +78,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                   target={'_blank'}
                   aria-label={`url`}
                 >
-                  <FaExternalLinkAlt />
+                  {getTechIcon('ExternalLink')}
                 </a>
               )}
             </div>
