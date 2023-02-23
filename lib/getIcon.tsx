@@ -1,7 +1,6 @@
 import { SiCplusplus, SiGit, SiGooglecolab, SiIcon, SiJavascript, SiKeras, SiLinux, SiMicrosoftsqlserver, SiPython, SiReact, SiTypescript } from 'react-icons/si';
 import { TbBrandGithub, TbBrandReactNative, TbCSharp } from 'react-icons/tb';
 import { DiMysql } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
 import { FaExternalLinkAlt, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export const getTechIcon = (name: string) => {
