@@ -40,7 +40,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           type==='r' ? ' md:ml-auto md:text-right' : ''
         )}
       >
-        <div className='w-full'>
+        <div className='relative w-full md:-top-8'>
           <p className={'px-10 font-normal text-accent-dark'.concat(type==='r' ? ' md:pl-0' : '')}>{p_type}</p>
           <h3 className={'px-10 mb-4 text-secondary-dark-3 md:text-secondary md:pb-0 md:dark:text-secondary-dark-3'.concat(type==='r' ? ' md:pl-0' : '')}>{title}</h3>
           <div className={'relative mb-4 md:absolute'.concat(
