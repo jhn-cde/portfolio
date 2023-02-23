@@ -10,8 +10,9 @@ import store from 'store'
 import { Provider } from 'react-redux'
 import { getIntro } from 'lib/intro'
 import { getAboutMe } from 'lib/aboutme'
+import { getInTouch } from 'lib/getInTouch'
 
-export default function Home({ intro, aboutme, projects }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({ intro, aboutme, projects, getintouch }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Provider store={store}>
       <Layout>
@@ -25,7 +26,7 @@ export default function Home({ intro, aboutme, projects }: InferGetStaticPropsTy
           <Intro {...intro.data}/>
           <AboutMe {...aboutme}/>
           <MyProjects projects={projects}/>
-          <GetInTouch />
+          <GetInTouch {...getintouch}/>
           
         </main>
       </Layout>
@@ -37,12 +38,14 @@ export const getStaticProps = async () => {
   const projects = getProjects();
   const intro = getIntro();
   const aboutme = await getAboutMe();
-  
+  const getintouch = await getInTouch()
+
   return {
     props: {
       projects,
       intro,
-      aboutme
+      aboutme,
+      getintouch
     }
   };
 }
