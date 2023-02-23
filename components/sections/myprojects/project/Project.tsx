@@ -44,7 +44,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           <p className={'px-10 font-normal text-accent-dark'.concat(type==='r' ? ' md:pl-0' : '')}>{p_type}</p>
           <h3 className={'px-10 mb-4 text-secondary-dark-3 md:text-secondary md:pb-0 md:dark:text-secondary-dark-3'.concat(type==='r' ? ' md:pl-0' : '')}>{title}</h3>
           <div className={'relative mb-4 md:absolute'.concat(
-            type==='r' ? ' md:-left-3/4' : ' md:-right-1/2'
+            type==='r' ? ' md:-left-full lg:-left-3/4' : ' md:-right-full lg:-right-1/2'
           )}>
             <p 
               className={'bg-primary-dark-1 bg-opacity-0 md:py-6 md:bg-opacity-95 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark px-10 mb-2 pb-4'.concat(
