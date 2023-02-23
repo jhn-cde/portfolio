@@ -16,7 +16,7 @@ const Description = ({skills, content}: Props) => {
       <h3 className='text-accent-dark'>Core Skills</h3>
       <div className='flex flex-wrap justify-around text-6xl'>
         {skills.map(skill => 
-          <div key={skill} className='text-blue-400 m-4'>
+          <div key={skill} className='text-secondary-1  dark:text-secondary-dark-1 m-4'>
             {getTechIcon(skill)}
           </div>)
         }
