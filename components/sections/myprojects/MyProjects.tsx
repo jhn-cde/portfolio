@@ -3,7 +3,21 @@ import type { InferGetStaticPropsType } from 'next'
 import React, { useState } from 'react'
 import Project from './project/Project'
 
-const MyProjects = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
+type project = {
+  title: string,
+  description: string,
+  p_type: string,
+  img: string,
+  techs: string,
+  gh: string,
+  url: string
+}
+
+interface Props{
+  projects: {id: string, data: project}[]
+}
+
+const MyProjects = ({ projects }: Props) => {
   const [more, setMore] = useState(false)
 
   return (
