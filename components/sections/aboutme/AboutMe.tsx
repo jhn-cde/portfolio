@@ -11,7 +11,7 @@ interface Props{
 const AboutMe = ({title, skills, content}: Props) => {
   const skillsSplitted = skills.split(', ').map(skill => skill)
   return (
-    <section className='relative sm:min-h-screen bg-primary-2 flex items-center lg:px-4 lg:py-12 dark:bg-primary-dark-2' id={'aboutme'}>
+    <section className='relative sm:scroll-py-3.5 bg-primary-2 flex items-center lg:px-4 lg:py-12 dark:bg-primary-dark-2' id={'aboutme'}>
       <div className="md:max-w-6xl m-auto lg:py-0 lg:flex items-center sm:px md:px-20">
         <div className='mb-8 lg:mb-0 lg:absolute left-0 lg:h-full'>
           <Image
