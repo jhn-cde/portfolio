@@ -2,8 +2,6 @@ import { readdirSync, readFileSync } from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
 
-const projectDir = join(process.cwd(), 'content/intro')
-
 export function getIntro(){
   const filepath = 'content/intro/intro.md';
   const id = 'intro.md';

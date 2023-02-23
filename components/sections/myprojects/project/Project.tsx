@@ -1,10 +1,6 @@
+import { getTechIcon } from 'lib/getIcon';
 import Image from 'next/image'
 import React from 'react'
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { SiCplusplus, SiGooglecolab, SiKeras, SiMicrosoftsqlserver, SiPython, SiReact } from 'react-icons/si';
-import { TbBrandGithub, TbBrandReactNative, TbCSharp } from 'react-icons/tb';
-import { DiMysql } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
 
 interface Props{
   title: string,
@@ -18,37 +14,7 @@ interface Props{
 }
 
 const Project = ({title, description, p_type, techs, img, gh, url, type}: Props) => {
-  const getTechIcon = (tech: string) => {
-    switch (tech) {
-      case 'JavaScript':
-        return <IoLogoJavascript title="JavaScript" className='mr-3'/>
-      case 'TypeScript':
-        return <span title="TypeScript" className='font-mono pt-0.5 font-extrabold mr-3'>TS</span>
-      case 'React':
-        return <SiReact title="React" className='mr-3'/>
-      case 'ReactNative':
-        return <TbBrandReactNative title="React Native" className='mr-3'/>
-      case 'SQLServer':
-        return <SiMicrosoftsqlserver title="Microsoft SQL Server" className='mr-3'/>
-      case 'SQLLite':
-        return <DiMysql title="MySQL" className='mr-3'/>
-      case 'Python':
-        return <SiPython title="Python" className='mr-3'/>
-      case 'Cpp':
-        return <SiCplusplus title="C++" className='mr-3'/>
-      case 'CSharp':
-        return <TbCSharp title="C#" className='mr-3'/>
-      case 'Keras':
-        return <SiKeras title="Keras" className='mr-3'/>
-      case 'Colab':
-        return <SiGooglecolab title="Google Colab" className='mr-3'/>
-      case 'Express':
-        return <span title="Express JS" className='font-mono font-semibold mr-3'>ex</span>
-      default:
-        break;
-    }
-  }
-
+  
   return (
     <div 
       className='relative rounded-md md:h-80 lg:h-96'
@@ -78,7 +44,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
           <p className={'px-10 font-normal text-accent-dark'.concat(type==='r' ? ' md:pl-0' : '')}>{p_type}</p>
           <h3 className={'px-10 mb-4 text-secondary-dark-3 md:text-secondary md:pb-0 md:dark:text-secondary-dark-3'.concat(type==='r' ? ' md:pl-0' : '')}>{title}</h3>
           <div className={'relative mb-4 md:absolute'.concat(
-            type==='r' ? ' md:-left-3/4' : ' md:-right-1/2'
+            type==='r' ? ' md:-left-full lg:-left-3/4' : ' md:-right-full lg:-right-1/2'
           )}>
             <p 
               className={'bg-primary-dark-1 bg-opacity-0 md:py-6 md:bg-opacity-95 md:rounded-md md:backdrop-blur-xl md:bg-primary-dark px-10 mb-2 pb-4'.concat(
@@ -89,20 +55,20 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                 type==='r' ? ' md:justify-end' : ''
             )}>
               {techs.split(', ').map(item => (
-              <div className=' flex items-center' key={item}>
+              <div className='flex items-center mr-3' key={item}>
                 {getTechIcon(item)}
               </div>))}
               {url || gh && '|'}
               {gh&&(
                 <a 
-                  className={'relative text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-3 p-1.5 rounded-md hover:-translate-y-1'.concat(
-                    type==='r' ? ' md:mr-0 md:ml-3' : ''
+                  className={'relative text-secondary-dark-3 md:text-secondary-3 md:dark:text-secondary-dark-3 ml-1 p-1.5 rounded-md hover:-translate-y-1'.concat(
+                    type==='r' ? ' md:mr-0 md:ml-1' : ''
                   )} 
                   href={gh} 
                   target={'_blank'}
                   aria-label={`github link`}
                 >
-                  <TbBrandGithub className='relative' />
+                  {getTechIcon('GitHub')}
                 </a>
               )}
               {url && (
@@ -112,7 +78,7 @@ const Project = ({title, description, p_type, techs, img, gh, url, type}: Props)
                   target={'_blank'}
                   aria-label={`url`}
                 >
-                  <FaExternalLinkAlt />
+                  {getTechIcon('ExternalLink')}
                 </a>
               )}
             </div>

@@ -10,7 +10,7 @@ interface Props{
 
 const Intro = ({intro, title, subtitle, description}: Props) => {
   return (
-    <section className="relative pt-32 py-16 sm:min-h-screen flex items-center sm:px-10 md:px-20 px-4 md:max-w-6xl m-auto">
+    <section className="relative pt-32 py-16 sm:scroll-py-3.5 flex items-center sm:px-10 md:px-20 px-4 md:max-w-6xl m-auto">
       <div className="w-auto sm:w-10/12 relative z-10">
         <p className="text-accent font-bold font-mono sm:text-lg">{intro}</p>
         <h1 className='text-accent text-4xl font-black sm:text-5xl md:text-6xl lg:text-8xl'>{title}</h1>

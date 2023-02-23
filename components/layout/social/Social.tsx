@@ -1,6 +1,5 @@
+import { getTechIcon } from 'lib/getIcon'
 import React, { useState } from 'react'
-import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
-import { TbBrandGithub } from 'react-icons/tb'
 
 interface Props{
   url: string,
@@ -32,13 +31,13 @@ const Social = () => {
     <div className='fixed right-3 bottom-0 z-50 sm:left-6 sm:right-auto lg:left-8'>
       <ul>
         <CustomLi url={"https://github.com/jhn-cde"} onHover={onHover}>
-          <TbBrandGithub />
+          {getTechIcon('GitHub')}
         </CustomLi>
         <CustomLi url={"https://www.instagram.com/johan.cde/"} onHover={onHover} > 
-          <FaInstagram />
+          {getTechIcon('Instagram')}
         </CustomLi>
         <CustomLi url={"https://www.linkedin.com/in/johanwilla/"} onHover={onHover}>
-          <FaLinkedinIn />
+          {getTechIcon('LinkedIn')}
         </CustomLi>
         <li>
           <div className={'border-r-2 h-12 w-0 m-auto sm:h-32 '.concat(hover?' border-primary-3 dark:border-primary-dark-1':' border-primary dark:border-primary-dark')}></div>
