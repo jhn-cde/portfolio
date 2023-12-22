@@ -1,5 +1,0 @@
----
-title: 'Get In Touch'
-email: 'toe.johan@gmail.com'
----
-I'm always happy to chat with new people! Let's start a conversation and see where it takes us.

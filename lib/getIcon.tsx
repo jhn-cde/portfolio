@@ -1,5 +1,5 @@
-import { SiCplusplus, SiGit, SiGooglecolab, SiIcon, SiJavascript, SiKeras, SiLinux, SiMicrosoftsqlserver, SiPython, SiReact, SiTypescript } from 'react-icons/si';
-import { TbBrandGithub, TbBrandReactNative, TbCSharp } from 'react-icons/tb';
+import { SiCplusplus, SiDjango, SiGit, SiGooglecolab, SiIcon, SiJavascript, SiKeras, SiLinux, SiMicrosoftsqlserver, SiPython, SiReact, SiTypescript } from 'react-icons/si';
+import { TbBrandGithub, TbBrandReactNative, TbBrandCSharp } from 'react-icons/tb';
 import { DiMysql } from 'react-icons/di';
 import { FaExternalLinkAlt, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
@@ -22,7 +22,9 @@ export const getTechIcon = (name: string) => {
     case 'Cpp':
       return <SiCplusplus title="C++"/>
     case 'CSharp':
-      return <TbCSharp title="C#"/>
+      return <TbBrandCSharp title="C#"/>
+    case 'Django':
+      return <SiDjango title="Django"/>
     case 'Keras':
       return <SiKeras title="Keras"/>
     case 'Colab':

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "booking_management",
+    "data": {
+      "title": "Booking Management",
+      "description": "A fullstack mobile app, Allows users to add new reservations and check pending reservations.",
+      "p_type": "University Project",
+      "techs": "TypeScript, ReactNative, Express",
+      "gh": "https://github.com/jhn-cde/booking-management",
+      "img": "booking_management.webp",
+      "url": ""
+    }
+  },
+  {
+    "id": "contests",
+    "data": {
+      "title": "Programming Contests",
+      "description": "Participated in university contest, ICPCP Peru Regional, codeforces, Google Kick Start. An Opportunity to improve programming skills.",
+      "p_type": "Personal Project",
+      "techs": "Python, Cpp",
+      "url": "",
+      "img": "contests.webp"
+    }
+  },
+  {
+    "id": "plan_de_estudios_unsaac",
+    "data": {
+      "title": "Plan de Estudios UNSAAC",
+      "description": "A web application built with React, to helps UNSAAC Computer Science students to check their progress and plan for graduation.",
+      "p_type": "Personal Project",
+      "techs": "React, JavaScript",
+      "gh": "https://github.com/jhn-cde/plan-estudios-unsaac",
+      "img": "plan_de_estudios.webp",
+      "url": ""
+    }
+  },
+  {
+    "id": "scanned_document_verification",
+    "data": {
+      "title": "Scanned document verification",
+      "description": "Machine learning applied to validate that a scanned document is legible and that the person`s data can be seen.",
+      "p_type": "University Project",
+      "techs": "Python, Colab, Keras",
+      "gh": "",
+      "img": "validation.webp",
+      "url": ""
+    }
+  },
+  {
+    "id": "transport_path_plannig",
+    "data": {
+      "title": "Transport path plannig",
+      "description": "Uses Dijkstra algorithm and Voronoi Diagrams for route planning.",
+      "p_type": "University Project",
+      "techs": "Python, Django",
+      "gh": "https://github.com/jhn-cde/transport_path_planning",
+      "img": "plan_de_estudios.webp",
+      "url": ""
+    }
+  },
+  {
+    "id": "tutoring_system",
+    "data": {
+      "title": "Tutoring System",
+      "description": "A group project to improve teamwork skills using SCRUM, Desktop application for organization and distribution of tutor teachers at the university.",
+      "p_type": "University Project",
+      "techs": "CSharp, SQLServer",
+      "gh": "https://github.com/Jeremylazm/AppSistemaTutoria",
+      "img": "tutoring.webp",
+      "url": ""
+    }
+  }
+]
